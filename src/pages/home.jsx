@@ -1,6 +1,8 @@
 import React from 'react';
 import { useRef, useEffect, useState } from 'react';
 import Navbar from '../components/Navbar';// Import your Navbar component
+import ExpertiseSection from '../components/ExpertiseSection';
+import ServicesSection from '../components/ServicesSection';
 
 
 const AnimatedVideoBackground = ({ 
@@ -81,70 +83,16 @@ const AnimatedVideoBackground = ({
 const ProductBadge = () => {
     return (
       <div>
-        <div 
-          className="inline-flex items-center  border rounded-[36px]"
-          style={{
-            width: '384px',
-            height: '33px',
-            paddingTop: '8px',
-            paddingRight: '14px',
-            paddingBottom: '8px',
-            paddingLeft: '14px',
-            borderRadius: '36px',
-            borderWidth: '0.5px',
-            borderColor: '#6B7280'
-          }}
+        <div className="inline-flex items-center border border-gray-500 rounded-[36px] px-3 sm:px-4 py-2 max-w-xs sm:max-w-sm lg:max-w-md"
         >
-          <div 
-            className="flex items-center justify-center gap-2"
-            style={{
-              width: '359px',
-              height: '17px',
-            }}
-          >
-            <span 
-              style={{
-                fontFamily: 'Urbanist, system-ui, -apple-system, sans-serif',
-                fontWeight: 300,
-                fontSize: '14px',
-                lineHeight: '121%',
-                letterSpacing: '0%',
-                textAlign: 'center',
-                verticalAlign: 'middle',
-                textTransform: 'capitalize',
-                color: '#D1D5DB'
-              }}
-            >
+          <div className="flex items-center justify-center gap-1 sm:gap-2 text-xs sm:text-sm">
+            <span className="font-light text-gray-300 font-urbanist capitalize">
               delivering end to end •
             </span>
-            <span 
-              style={{
-                fontFamily: 'Urbanist, system-ui, -apple-system, sans-serif',
-                fontWeight: 700,
-                fontSize: '14px',
-                lineHeight: '121%',
-                letterSpacing: '0%',
-                textAlign: 'center',
-                verticalAlign: 'middle',
-                textTransform: 'capitalize',
-                color: '#FFFFFF'
-              }}
-            >
+            <span className="font-bold text-white font-urbanist capitalize">
               B2B | B2C | SAAS | SPA
             </span>
-            <span 
-              style={{
-                fontFamily: 'Urbanist, system-ui, -apple-system, sans-serif',
-                fontWeight: 300,
-                fontSize: '14px',
-                lineHeight: '121%',
-                letterSpacing: '0%',
-                textAlign: 'center',
-                verticalAlign: 'middle',
-                textTransform: 'capitalize',
-                color: '#D1D5DB'
-              }}
-            >
+            <span className="font-light text-gray-300 font-urbanist capitalize">
               Products
             </span>
           </div>
@@ -156,156 +104,25 @@ const ProductBadge = () => {
 // Main Hero Content Component
 const HeroContent = () => {
     return (
-      <div className="relative z-10 flex flex-col items-center"
-        style={{
-          width: '1140px',
-          height: '333px',
-          gap: '28px',
-          opacity: 1
-        }}
+      <div className="relative z-10 flex flex-col items-center w-full max-w-5xl mx-auto space-y-6 lg:space-y-7 text-center px-4"
       >
         <ProductBadge />
         
-        <h1 
-          style={{
-            width: '907px',
-            height: '192px',
-            fontFamily: 'Urbanist, system-ui, -apple-system, sans-serif',
-            fontWeight: 700,
-            fontSize: '54px',
-            lineHeight: '150%',
-            letterSpacing: '-2%',
-            textAlign: 'center',
-            verticalAlign: 'middle',
-            textTransform: 'capitalize',
-            color: '#FFFFFF',
-            opacity: 1,
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            margin: 0
-          }}
-        >
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight tracking-tight text-center capitalize font-urbanist max-w-4xl">
           We Build a Better Digital Future for Your Business
         </h1>
         
-        <p 
-          style={{
-            width: '566px',
-            height: '19px',
-            fontFamily: 'Roboto, system-ui, -apple-system, sans-serif',
-            fontWeight: 500,
-            fontSize: '15px',
-            lineHeight: '121%',
-            letterSpacing: '0%',
-            textAlign: 'center',
-            verticalAlign: 'middle',
-            textTransform: 'capitalize',
-            color: '#D6D6D6',
-            opacity: 1,
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            margin: 0
-          }}
-        >
+        <p className="text-sm sm:text-base lg:text-lg text-gray-300 text-center capitalize font-medium font-roboto max-w-2xl">
           High-performance software, apps, and web platforms. Engineered for impact.
         </p>
         
-        <div 
-        style={{
-          width: '393px',
-          height: '50px',
-          gap: '25px',
-          opacity: 1,
-          display: 'flex',
-          flexDirection: 'row',
-          alignItems: 'center',
-          justifyContent: 'center'
-        }}
-      >
-        <button 
-          style={{
-            width: '220px',
-            height: '50px',
-            paddingTop: '10px',
-            paddingRight: '14px',
-            paddingBottom: '10px',
-            paddingLeft: '14px',
-            gap: '8px',
-            opacity: 1,
-            borderRadius: '32px',
-            borderWidth: '1px',
-            borderStyle: 'solid',
-            borderColor: '#FFFFFF',
-            backgroundColor: '#0038A0CC',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            cursor: 'pointer',
-            transition: 'all 0.3s ease'
-          }}
-           
-        >
-          <span
-            style={{
-              width: '192px',
-              height: '30px',
-              opacity: 1,
-              color: '#FFFFFF',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              fontFamily: 'system-ui, -apple-system, sans-serif',
-              fontSize: '16px',
-              fontWeight: '600'
-            }}
-          >
-            Schedule a call Today
-          </span>
+        <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full max-w-md">
+        <button className="w-full sm:w-auto px-6 py-3 bg-blue-600/80 border border-white rounded-full text-white font-semibold text-sm sm:text-base hover:bg-blue-600 transition-all duration-300 backdrop-blur-sm">
+          Schedule a call Today
         </button>
         
-        <button 
-          style={{
-            width: '148px',
-            height: '44px',
-            paddingTop: '10px',
-            paddingRight: '14px',
-            paddingBottom: '10px',
-            paddingLeft: '14px',
-            gap: '8px',
-            opacity: 1,
-            borderRadius: '32px',
-            borderWidth: '1px',
-            borderStyle: 'solid',
-            borderColor: '#FFFFFF',
-            backgroundColor: 'rgba(0, 0, 0, 0.2)',
-            backdropFilter: 'blur(4px)',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            cursor: 'pointer',
-            transition: 'all 0.3s ease'
-          }}
-          onMouseEnter={(e) => e.target.style.borderColor = '#FFFFFF'}
-          onMouseLeave={(e) => e.target.style.borderColor = '#FFFFFF'}
-        >
-          <span
-            style={{
-              width: '192px',
-              height: '30px',
-              opacity: 1,
-              color: '#FFFFFF',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              fontFamily: 'system-ui, -apple-system, sans-serif',
-              fontSize: '14px',
-              fontWeight: '600'
-            }}
-          >
-            Explore Our Work
-          </span>
+        <button className="w-full sm:w-auto px-6 py-3 bg-black/20 border border-white rounded-full text-white font-semibold text-sm sm:text-base hover:bg-black/30 transition-all duration-300 backdrop-blur-md">
+          Explore Our Work
         </button>
       </div>
       </div>
@@ -316,15 +133,7 @@ const HeroContent = () => {
 // Hero Section Component
 const HeroSection = () => {
   return (
-    <section 
-      className="relative bg-black flex items-center justify-center overflow-hidden rounded-[32px]" 
-      style={{ 
-        width: '1440px',
-        height: '530px',
-        paddingLeft: '150px',
-        paddingRight: '150px',
-      }}
-    >
+    <section className="relative bg-black flex items-center justify-center overflow-hidden rounded-[32px] w-full max-w-7xl mx-auto h-[400px] sm:h-[480px] lg:h-[530px] px-4 sm:px-8 lg:px-[150px]">
       <AnimatedVideoBackground />
       <HeroContent />
     </section>
@@ -334,138 +143,38 @@ const HeroSection = () => {
 // Trusted By Section 
 const TrustedBySection = () => {
     return (
-      <section 
-        style={{
-          width: '1440px',
-          height: '166px',
-          paddingBottom: '25px',
-          gap: '30px',
-          opacity: 1,
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'center'
-        }}
-      >
-        {/* Trusted By Header */}
-        <div
-          style={{
-            width: '1440px',
-            height: '36px',
-            opacity: 1,
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center'
-          }}
-        >
-          <h2
-            style={{
-              fontFamily: 'Urbanist, system-ui, -apple-system, sans-serif',
-              fontWeight: 700,
-              fontSize: '24px',
-              lineHeight: '150%',
-              letterSpacing: '-2%',
-              textAlign: 'center',
-              verticalAlign: 'middle',
-              color: '#FFFFFF',
-              margin: 0
-            }}
-          >
-            Trusted By
-          </h2>
-        </div>
+      <section className="w-full py-12 lg:py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          {/* Trusted By Header */}
+          <div className="text-center mb-8 lg:mb-12">
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white font-urbanist tracking-tight">
+              Trusted By
+            </h2>
+          </div>
  
-        <div
-          style={{
-            width: '1440px',
-            height: '50px',
-            gap: '120px',
-            opacity: 1,
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center'
-          }}
+          <div className="flex flex-wrap justify-center items-center gap-8 sm:gap-12 lg:gap-16 xl:gap-20"
         >
  
-          <div
-            style={{
-              width: '118.777px',
-              height: '27.122px',
-              opacity: 1,
-              color: '#F0F0F0',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              fontSize: '18px',
-              fontWeight: 'bold'
-            }}
-          >
+          <div className="flex items-center justify-center text-gray-200 text-base sm:text-lg font-bold hover:text-white transition-colors duration-300">
             ◆ logoipsum
           </div>
   
-          <div
-            style={{
-              width: '123.36px',
-              height: '28.49px',
-              opacity: 1,
-              color: '#F0F0F0',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              fontSize: '18px',
-              fontWeight: 'bold'
-            }}
-          >
+          <div className="flex items-center justify-center text-gray-200 text-base sm:text-lg font-bold hover:text-white transition-colors duration-300">
             ★ logoipsum
           </div>
   
-          <div
-            style={{
-              width: '100.19px',
-              height: '47.654px',
-              opacity: 1,
-              color: '#F0F0F0',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              fontSize: '18px',
-              fontWeight: 'bold'
-            }}
-          >
+          <div className="flex items-center justify-center text-gray-200 text-base sm:text-lg font-bold hover:text-white transition-colors duration-300">
             ▲ logoipsum
           </div>
   
-          <div
-            style={{
-              width: '117.677px',
-              height: '23.615px',
-              opacity: 1,
-              color: '#F0F0F0',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              fontSize: '18px',
-              fontWeight: 'bold'
-            }}
-          >
+          <div className="flex items-center justify-center text-gray-200 text-base sm:text-lg font-bold hover:text-white transition-colors duration-300">
             ● logoipsum
           </div>
   
-          <div
-            style={{
-              width: '126.719px',
-              height: '29.541px',
-              opacity: 1,
-              color: '#F0F0F0',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              fontSize: '18px',
-              fontWeight: 'bold'
-            }}
-          >
+          <div className="flex items-center justify-center text-gray-200 text-base sm:text-lg font-bold hover:text-white transition-colors duration-300">
             ◉ logoipsum
           </div>
+        </div>
         </div>
       </section>
     );
@@ -475,17 +184,13 @@ const TrustedBySection = () => {
  
 const CompleteLandingPage = () => {
   return (
-    <div className="bg-black ">
+    <div className="bg-black min-h-screen">
         
-      <div className="fixed top-0 left-0 right-0 z-50 ">
+      <div className="fixed top-0 left-0 right-0 z-50">
         <Navbar />
       </div>
       
-      <div className="mx-auto flex flex-col pt-20" style={{
-          width: '1440px',
-          minHeight: '6081px',
-          gap: '58px'
-        }}
+      <div className="w-full flex flex-col pt-20 space-y-16 lg:space-y-20"
       >
         {/* Hero Section */}
         <div className="flex-shrink-0">
@@ -495,6 +200,16 @@ const CompleteLandingPage = () => {
         {/* Trusted By Section */}
         <div className="flex-shrink-0">
           <TrustedBySection />
+        </div>
+
+        {/* Expertise Section - Gradient Background */}
+        <div className="flex-shrink-0">
+          <ExpertiseSection />
+        </div>
+
+        {/* Services Section - Plain Background */}
+        <div className="flex-shrink-0">
+          <ServicesSection />
         </div>
 
       </div>
