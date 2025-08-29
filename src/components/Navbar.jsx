@@ -42,7 +42,7 @@ const Navbar = () => {
   return (
     <nav className="w-full px-8 py-5 flex justify-center">
       <div
-        className="relative w-[1120px] rounded-full bg-transparent backdrop-blur-[3px]"
+        className="relative w-[1120px] rounded-full bg-transparent backdrop-blur-[2px]"
         style={{ zIndex: 10 }}
       >
         {/* Pseudo-element for gradient border */}
