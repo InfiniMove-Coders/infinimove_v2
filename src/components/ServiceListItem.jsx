@@ -1,5 +1,5 @@
-
 import React from 'react';
+import { HoverBorderGradient } from "../components/ui/hover-border-gradient";
 
 /**
  * ServiceListItem - Individual service list item component
@@ -9,16 +9,20 @@ import React from 'react';
  */
 const ServiceListItem = ({ service, isActive, onClick }) => {
   return (
-    <button
+    <HoverBorderGradient
+      as="button"
+      containerClassName="w-full rounded-lg"
       onClick={() => onClick(service)}
-      className={`w-full text-left py-3 px-4 rounded-lg transition-all duration-300 font-urbanist ${
-        isActive 
-          ? 'bg-blue-600/20 text-white border border-blue-500/30' 
-          : 'text-gray-300 hover:text-white hover:bg-gray-800/30'
-      }`}
+      className={`w-full text-left py-3 px-4 transition-all duration-300 font-urbanist flex items-center justify-start
+        ${isActive 
+          ? "dark:bg-black bg-white text-black dark:text-white" 
+          : "dark:bg-black/50 bg-white/70 text-gray-300 dark:text-gray-300 hover:text-white"
+        }`}
     >
-      {service}
-    </button>
+      <span className="text-base lg:text-lg font-medium">
+        {service}
+      </span>
+    </HoverBorderGradient>
   );
 };
 

@@ -3,6 +3,7 @@ import { useRef, useEffect, useState } from 'react';
 import Navbar from '../components/Navbar';// Import your Navbar component
 import ExpertiseSection from '../components/ExpertiseSection';
 import ServicesSection from '../components/ServicesSection';
+import InfiniMoveFooter from '../components/footer';
 
 
 const AnimatedVideoBackground = ({ 
@@ -133,9 +134,14 @@ const HeroContent = () => {
 // Hero Section Component
 const HeroSection = () => {
   return (
-    <section className="relative bg-black flex items-center justify-center overflow-hidden rounded-[32px] w-full max-w-7xl mx-auto h-[400px] sm:h-[480px] lg:h-[530px] px-4 sm:px-8 lg:px-[150px]">
+    <section className="relative bg-black flex items-center justify-center overflow-hidden w-full h-[400px] sm:h-[480px] lg:h-[530px]">
+      {/* Full-screen video */}
       <AnimatedVideoBackground />
-      <HeroContent />
+
+      {/* Centered Hero Content */}
+      <div className="relative z-10 flex flex-col items-center justify-center w-full px-4 sm:px-8">
+        <HeroContent />
+      </div>
     </section>
   );
 };
@@ -190,7 +196,7 @@ const CompleteLandingPage = () => {
         <Navbar />
       </div>
       
-      <div className="w-full flex flex-col pt-20 space-y-16 lg:space-y-20"
+      <div className="w-full bottom-0 flex flex-col pt-20 space-y-16"
       >
         {/* Hero Section */}
         <div className="flex-shrink-0">
@@ -211,7 +217,10 @@ const CompleteLandingPage = () => {
         <div className="flex-shrink-0">
           <ServicesSection />
         </div>
-
+        {/* Footer Section */}
+        <div className="flex-shrink-0">
+          <InfiniMoveFooter />
+        </div>
       </div>
     </div>
   );
