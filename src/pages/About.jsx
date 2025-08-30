@@ -1,66 +1,11 @@
 import React, { Component } from 'react';
-import Navbar from '../components/Navbar';
-import AnimatedVideoBackground from '../components/AnimatedVideoBackground';
-
-const ProductBadge = () => {
-    return (
-        <div>
-            <div
-                className="inline-flex items-center border rounded-[36px]"
-                style={{
-                    width: '100px',
-                    height: '33px',
-                    paddingTop: '8px',
-                    paddingRight: '14px',
-                    paddingBottom: '8px',
-                    paddingLeft: '14px',
-                    borderRadius: '36px',
-                    borderWidth: '0.5px',
-                    borderColor: '#6B7280'
-                }}
-            >
-                <div
-                    className="flex items-center justify-center gap-2"
-                    style={{
-                        width: '359px',
-                        height: '17px',
-                    }}
-                >
-                    <span
-                        style={{
-                            fontFamily: 'Urbanist, system-ui, -apple-system, sans-serif',
-                            fontWeight: 300,
-                            fontSize: '14px',
-                            lineHeight: '121%',
-                            letterSpacing: '0%',
-                            textAlign: 'center',
-                            verticalAlign: 'middle',
-                            textTransform: 'capitalize',
-                            color: '#D1D5DB'
-                        }}
-                    >
-                        About
-                    </span>
-                    <span
-                        style={{
-                            fontFamily: 'Urbanist, system-ui, -apple-system, sans-serif',
-                            fontWeight: 700,
-                            fontSize: '14px',
-                            lineHeight: '121%',
-                            letterSpacing: '0%',
-                            textAlign: 'center',
-                            verticalAlign: 'middle',
-                            textTransform: 'capitalize',
-                            color: '#FFFFFF'
-                        }}
-                    >
-                        US
-                    </span>
-                </div>
-            </div>
-        </div>
-    );
-};
+import Navbar from '../components/Navbar/Navbar';
+import AnimatedVideoBackground from '../components/Background/AnimatedVideoBackground';
+import ProductBadge from '../components/About/ProductBadge';
+import VisionStats from '../components/About/VisionStats';
+import GuidingPrinciples from '../components/About/GuidingPrinciples';
+import AboutForm from '../components/About/AboutForm';
+import Footer from '../components/Footer/Footer';
 
 const About = () => {
     return (
@@ -245,7 +190,47 @@ const About = () => {
                         </div>
                     </div>
                 </section>
+                <VisionStats />
+                <GuidingPrinciples />
+                <div
+                    style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        background: "black"
+                    }}
+                >
+                    {/* Heading */}
+                    <h1
+                        style={{
+                            color: "#F0F0F0",
+                            fontSize: "48px",
+                            fontWeight: 900,
+                            margin: 0,
+                            letterSpacing: "1px"
+                        }}
+                    >
+                        OUR MISSION
+                    </h1>
+                    {/* Subtitle */}
+                    <p
+                        style={{
+                            color: "#ABABAB",
+                            fontSize: "24px",
+                            marginTop: "18px",
+                            marginBottom: "40px",
+                            fontWeight: 700,
+                            textAlign: "center"
+                        }}
+                    >
+                        To be a recognized leader in the digital transformation of industries, defined by our <br></br>
+                        unwavering commitment to excellence and the success of our clients.
+                    </p>
+                </div>
             </div>
+            <AboutForm/>
+            <Footer/>
         </>
     )
 }

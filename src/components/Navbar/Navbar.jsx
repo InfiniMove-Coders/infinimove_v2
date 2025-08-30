@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import routes from '../pages/Routes/Routes';
+import routes from '../../pages/Routes/Routes';
 
 const Navbar = () => {
   const [activeTab, setActiveTab] = useState('Home');
