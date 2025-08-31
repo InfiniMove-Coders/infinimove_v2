@@ -5,7 +5,7 @@ const routes = [
   { name: 'Projects', path: '/projects' },
   { name: 'Our Journey', path: '/our-journey' },
   { name: 'About', path: '/about' },
-  { name: 'Contact', path: '/contact' }
+  { name: 'Contact', path: '/contact' },
 ];
 
 export default routes;

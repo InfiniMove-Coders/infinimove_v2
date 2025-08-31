@@ -16,7 +16,7 @@ const Footer = () => {
       <div className="max-w-[1440px] mx-auto flex flex-col lg:flex-row gap-8 px-6 pl-25">
         <div className="flex-1 min-w-[340px]">
           <div className="flex items-center mb-4">
-            <img src="/public/Vector.svg" alt="InfiniMove Logo" className="w-10 h-10 mr-2" />
+            <img src="/Vector.svg" alt="InfiniMove Logo" className="w-10 h-10 mr-2" />
             <span className="font-semibold text-2xl">InfiniMove</span>
           </div>
           <div className="mb-6 text-base font-weight-400 font-[16px] max-w-md leading-relaxed">
