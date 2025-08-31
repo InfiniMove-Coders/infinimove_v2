@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar/Navbar';
 import AnimatedVideoBackground from '../components/Background/AnimatedVideoBackground';
 import TrustedBySection from '../components/Home/TrustedBySection';
 import ProductBadge from '../components/Home/ProductBadge';
-
+import Footer from '../components/Footer/Footer';
 const Home = () => {
   return (
     <div className="bg-black min-h-screen" style={{ overflowX: 'hidden' }}>
@@ -186,6 +186,7 @@ const Home = () => {
         </div>
       </section>
       <TrustedBySection />
+      <Footer/>
     </div>
   );
 };
