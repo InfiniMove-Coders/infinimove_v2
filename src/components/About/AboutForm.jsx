@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutForm = () => {
     return (
-        <div className="min-h-screen bg-black flex items-center justify-center p-6">
+        <div className="min-h-screen bg-black flex items-center justify-center p-6 ">
             <div
                 className="flex flex-col md:flex-row w-full rounded-[20px] bg-[black] shadow-lg overflow-hidden"
                 style={{
@@ -12,7 +12,7 @@ const AboutForm = () => {
             >
                 {/* Left */}
                 <div
-                    className="rounded-[20px] overflow-hidden h-[484px] flex-1 flex flex-col justify-center p-8"
+                    className="rounded-[20px] overflow-hidden h-[484px]  flex-1 flex flex-col justify-center p-8"
                     style={{
                         padding: '0.81px',
                         background:
@@ -129,7 +129,7 @@ const AboutForm = () => {
                             </div>
                         </div>
                         <div className="bg-[#F0F0F0] rounded-xl p-4 shadow flex items-center gap-2">
-                            <span className="bg-blue-600 rounded-full p-2 text-white h-[40px] w-[40px] "><img src="/images/business_icon.png" alt="" /></span>
+                            <span className="bg-blue-600 rounded-full p-2 text-white h-[40px] w-[40px] "><img src="/images/BusinessHours.png" alt="" /></span>
                             <div>
                                 <div className="font-bold mb-2">Business Hours</div>
                                 <div className="text-[12px]">
