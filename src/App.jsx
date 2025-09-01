@@ -6,16 +6,22 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import OurJourney from './pages/OurJourney';
 import IndividualBlog from './pages/IndividualBlog';
+import Services from './pages/Services';
+import ScrollToTop from './components/Navbar/ScrollToTop';
 
 
 const App = () => (
+  <>
+  <ScrollToTop />
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/projects" element={<Projects/>}/>
-      <Route path="our-journey" element={<OurJourney/>}/>
-      <Route path='individualblog' element={<IndividualBlog/> }/>
+      <Route path="/our-journey" element={<OurJourney/>}/>
+      <Route path='/individualblog' element={<IndividualBlog/> }/>
+      <Route path='/services' element={<Services/>} />
     </Routes>
+    </>
 );
 
 export default App;
