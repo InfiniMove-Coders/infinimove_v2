@@ -186,7 +186,9 @@ const Home = () => {
         </div>
       </section>
       <TrustedBySection />
+      <div id="footer">
       <Footer/>
+      </div>
     </div>
   );
 };
