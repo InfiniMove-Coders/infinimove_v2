@@ -226,5 +226,4 @@ const CompleteLandingPage = () => {
   );
 };
 
-
-export default CompleteLandingPage;
+export default Home;
