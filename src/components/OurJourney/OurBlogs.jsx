@@ -48,9 +48,9 @@ const OurBlogs = ({ onCardClick }) => {
       {/* Header */}
       <div className="flex flex-col items-center gap-2 mb-8 w-full">
         <h2
-          className="font-extrabold uppercase text-[48px] text-gray-300 tracking-tight"
+          className="font-extrabold uppercase text-[48px] text-[#F0F0F0] tracking-tight"
           style={{
-            fontFamily: 'Urbanist, sans-serif',
+            fontFamily: 'Urbanist',
             lineHeight: '150%',
             letterSpacing: '-0.02em',
           }}

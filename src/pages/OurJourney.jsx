@@ -9,7 +9,6 @@ import OurBlogs from '../components/OurJourney/OurBlogs';
 const OurJourney = () => {
   const navigate = useNavigate();
 
-  // This function will be called when a blog card is clicked, with blogId parameter
   const handleBlogCardClick = () => {
     navigate('/individualblog');
   };
@@ -17,7 +16,6 @@ const OurJourney = () => {
   return (
     <>
       <div className="bg-black min-h-screen" style={{ overflowX: 'hidden' }}>
-        {/* Fixed Navbar at top */}
         <div className="fixed top-0 left-0 right-0 z-50">
           <Navbar />
         </div>
@@ -54,9 +52,9 @@ const OurJourney = () => {
                 width: '100%',
                 maxWidth: '907px',
                 height: '96px',
-                fontFamily: 'Urbanist, system-ui, -apple-system, sans-serif',
+                fontFamily: 'Urbanist',
                 fontWeight: 900,
-                fontSize: '54px',
+                fontSize: '64px',
                 lineHeight: '150%',
                 letterSpacing: '-2%',
                 textAlign: 'center',
@@ -115,7 +113,7 @@ const OurJourney = () => {
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    fontFamily: 'system-ui, -apple-system, sans-serif',
+                    fontFamily: 'Roboto',
                     fontSize: '16px',
                     fontWeight: '600',
                   }}
@@ -158,7 +156,7 @@ const OurJourney = () => {
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    fontFamily: 'system-ui, -apple-system, sans-serif',
+                    fontFamily: 'Roboto',
                     fontSize: '14px',
                     fontWeight: '600',
                   }}

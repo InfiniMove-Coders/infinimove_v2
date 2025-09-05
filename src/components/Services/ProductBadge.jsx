@@ -12,7 +12,7 @@ const ProductBadge = () => {
                     paddingLeft: '14px',
                     borderRadius: '36px',
                     borderWidth: '0.5px',
-                    borderColor: '#6B7280'
+                    borderColor: '#F0F0F0 '
                 }}
             >
                 <div

@@ -12,7 +12,7 @@ const ProductBadge = () => {
                     paddingLeft: '14px',
                     borderRadius: '36px',
                     borderWidth: '0.5px',
-                    borderColor: '#6B7280'
+                    borderColor: '#F0F0F0'
                 }}
             >
                 <div
@@ -24,23 +24,23 @@ const ProductBadge = () => {
                 >
                     <span
                         style={{
-                            fontFamily: 'Urbanist, system-ui, -apple-system, sans-serif',
-                            fontWeight: 300,
+                            fontFamily: 'Urbanist',
+                            fontWeight: "300px",
                             fontSize: '14px',
                             lineHeight: '121%',
                             letterSpacing: '0%',
                             textAlign: 'center',
                             verticalAlign: 'middle',
                             textTransform: 'capitalize',
-                            color: '#D1D5DB'
+                            color: '#FFFFFF'
                         }}
                     >
                         About
                     </span>
                     <span
                         style={{
-                            fontFamily: 'Urbanist, system-ui, -apple-system, sans-serif',
-                            fontWeight: 700,
+                            fontFamily: 'Urbanist',
+                            fontWeight: '700px',
                             fontSize: '14px',
                             lineHeight: '121%',
                             letterSpacing: '0%',

@@ -80,13 +80,13 @@ const cardText = [
 
 export default function FeaturedProjects() {
     return (
-        <section className="w-full py-14 bg-black border flex flex-col items-center">
+        <section className="w-full py-14 bg-black border flex flex-col items-center" style={{fontFamily:'urbanist'}}>
             {/* Header */}
-            <div className="mb-8 text-center">
-                <div className="uppercase font-extrabold text-[32px] text-gray-300 mb-1 tracking-widest" style={{ letterSpacing: '0.04em' }}>
+            <div className=" text-center">
+                <div className="uppercase font-extrabold text-[48px] text-[#F0F0F0] mb-1 tracking-widest" style={{ letterSpacing: '0.04em',}}>
                     Featured Projects
                 </div>
-                <div className="text-gray-500 text-[18px] font-medium">
+                <div className="text-[#ABABAB] text-[18px] font-medium" >
                     Discover how we can elevate your business.
                 </div>
             </div>
