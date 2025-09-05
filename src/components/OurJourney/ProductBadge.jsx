@@ -4,7 +4,7 @@ const ProductBadge = () => {
             <div
                 className="inline-flex items-center border rounded-[36px]"
                 style={{
-                    width: '100px',
+                    width: '120px',
                     height: '33px',
                     paddingTop: '8px',
                     paddingRight: '14px',
@@ -24,7 +24,7 @@ const ProductBadge = () => {
                 >
                     <span
                         style={{
-                            fontFamily: 'Urbanist, system-ui, -apple-system, sans-serif',
+                            fontFamily: 'Urbanist',
                             fontWeight: 300,
                             fontSize: '14px',
                             lineHeight: '121%',
@@ -39,7 +39,7 @@ const ProductBadge = () => {
                     </span>
                     <span
                         style={{
-                            fontFamily: 'Urbanist, system-ui, -apple-system, sans-serif',
+                            fontFamily: 'Urbanist',
                             fontWeight: 700,
                             fontSize: '14px',
                             lineHeight: '121%',

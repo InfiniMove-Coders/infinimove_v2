@@ -14,11 +14,12 @@ const GuidingPrinciples = () => (
     {/* Heading */}
     <h1
       style={{
+        fontFamily:'urbanist',
         color: "#F0F0F0",
         fontSize: "48px",
         fontWeight: 900,
         margin: 0,
-        letterSpacing: "1px"
+        letterSpacing: "-2px"
       }}
     >
       OUR GUIDING PRINCIPLES

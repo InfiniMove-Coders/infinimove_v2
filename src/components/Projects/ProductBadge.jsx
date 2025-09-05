@@ -4,7 +4,7 @@ const ProductBadge = () => {
             <div
                 className="inline-flex items-center border rounded-[36px]"
                 style={{
-                    width: '100px',
+                    width: '120px',
                     height: '33px',
                     paddingTop: '8px',
                     paddingRight: '14px',

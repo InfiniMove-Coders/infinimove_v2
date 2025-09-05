@@ -22,13 +22,12 @@ const VisionStats = () => (
     <section className="w-full bg-black flex flex-col items-center py-12">
         <h2
             style={{
-                textAlign: 'center',
-                fontFamily: 'Urbanist',
-                fontSize: '48px',
+                fontFamily:'urbanist',
+                color: "#F0F0F0",
+                fontSize: "48px",
                 fontWeight: 900,
-                lineHeight: 1,
-                letterSpacing: '-2%',
-                color: '#F0F0F0',
+                margin: 0,
+                letterSpacing: "-2px"
             }}
         >
             OUR VISION
@@ -41,7 +40,7 @@ const VisionStats = () => (
                 fontFamily: 'Urbanist',
                 fontSize: '24px',
                 fontWeight: 700,
-                color: '#A5A5A5'
+                color: '#ABABAB '
             }}
         >
             To empower businesses with state-of-the-art, reliable digital solutions that foster growth, optimize efficiency,<br />
@@ -60,7 +59,7 @@ const VisionStats = () => (
                         background: '#060606',
                         borderRadius: '20px',
                         padding: '20px 30px 20px 30px',
-                        boxShadow: '0 0 0 2px #2359d9',
+                        boxShadow: '0 0 0 1px #2359d9',
                         width: '278px',
                         height: '163px'
                     }}

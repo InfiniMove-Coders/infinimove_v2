@@ -14,10 +14,10 @@ const Footer = () => {
     >
       {/* Footer content remains unchanged */}
       <div className="max-w-[1440px] mx-auto flex flex-col lg:flex-row gap-8 px-6 pl-25">
-        <div className="flex-1 min-w-[340px]">
+        <div className="flex-1 min-w-[340px]" style={{fontFamily:'urbanist'}}>
           <div className="flex items-center mb-4">
             <img src="/Vector.svg" alt="InfiniMove Logo" className="w-10 h-10 mr-2" />
-            <span className="font-semibold text-2xl">InfiniMove</span>
+            <span className="font-semibold text-2xl" >InfiniMove</span>
           </div>
           <div className="mb-6 text-base font-weight-400 font-[16px] max-w-md leading-relaxed">
             Transforming businesses through innovative <br />
@@ -29,7 +29,7 @@ const Footer = () => {
             +91 83411 87337 &nbsp;|&nbsp; +91 73961 44250
           </div>
         </div>
-        <div className="flex-[2_2_0%] grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-4 items-start">
+        <div className="flex-[2_2_0%] grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-4 items-start" style={{fontFamily:'Plus Jakarta Sans'}}>
           <div>
             <div className="font-semibold text-xl mb-3">Company</div>
             <ul className="space-y-2">
@@ -79,7 +79,7 @@ const Footer = () => {
         </span>
       </div>
 
-      <div className="text-center text-blue-500 text-sm font-medium">
+      <div className="text-center text-blue-500 text-sm font-medium" style={{fontFamily:'urbanist'}}>
         © 2025 Infinimove. All rights reserved.
       </div>
     </footer>
