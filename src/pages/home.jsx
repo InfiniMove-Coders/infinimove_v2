@@ -1,9 +1,9 @@
 import React from 'react';
 import { useRef, useEffect, useState } from 'react';
-import Navbar from '../components/Navbar';// Import your Navbar component
-import ExpertiseSection from '../components/ExpertiseSection';
-import ServicesSection from '../components/ServicesSection';
-import InfiniMoveFooter from '../components/footer';
+import Navbar from '../components/Navbar/Navbar';
+import ExpertiseSection from '../components/Home/ExpertiseSection';
+import ServicesSection from '../components/Home/ServicesSection';
+import Footer from '../components/Footer/Footer';
 
 
 const AnimatedVideoBackground = ({ 
@@ -188,12 +188,12 @@ const TrustedBySection = () => {
 
 
  
-const CompleteLandingPage = () => {
+const Home = () => {
   return (
     <div className="bg-black min-h-screen">
         
       <div className="fixed top-0 left-0 right-0 z-50">
-        <Navbar />
+        <Navbar/>
       </div>
       
       <div className="w-full bottom-0 flex flex-col pt-20 space-y-16"
@@ -219,7 +219,7 @@ const CompleteLandingPage = () => {
         </div>
         {/* Footer Section */}
         <div className="flex-shrink-0">
-          <InfiniMoveFooter />
+          <Footer />
         </div>
       </div>
     </div>
