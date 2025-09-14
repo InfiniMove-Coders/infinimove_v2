@@ -9,169 +9,95 @@ import ServiceCards4 from '../components/Services/Services4';
 import AboutForm from '../components/About/AboutForm';
 import Footer from '../components/Footer/Footer';
 
-const Services=()=>{
-    return(
-    <div className="bg-black min-h-screen" style={{ overflowX: 'hidden' }}>
-      {/* Fixed Navbar at top */}
-      <div className="fixed top-0 left-0 right-0 z-50">
-        <Navbar />
-      </div>
-      {/* Hero Section */}
-                <section
-                    className="relative bg-black flex items-center justify-center overflow-hidden rounded-[32px]"
-                    style={{
-                        width: '100%',
-                        maxWidth: '1440px',
-                        height: '530px',
-                        paddingLeft: '150px',
-                        paddingRight: '150px',
-                        boxSizing: 'border-box',
-                        margin: '0 auto',
-                        marginTop: '78px',
-                    }}
+const Services = () => {
+    return (
+        <div className="bg-black min-h-screen" style={{ overflowX: 'hidden' }}>
+            {/* Fixed Navbar at top */}
+            <div className="fixed top-0 left-0 right-0 z-50">
+                <Navbar />
+            </div>
+            {/* Hero Section */}
+            <section
+                className="
+    relative bg-black flex items-center justify-center overflow-hidden rounded-[32px]
+    w-full max-w-[1440px] h-[200px] sm:h-[360px] md:h-[460px] lg:h-[530px]
+    mx-auto mt-[60px] sm:mt-[65px] md:mt-[70px] lg:mt-[78px]
+    px-4 sm:px-8 md:px-16 lg:px-[150px]
+  "
+            >
+                <AnimatedVideoBackground />
+
+                <div
+                    className="
+      relative z-10 flex flex-col items-center text-center
+      w-full max-w-[1140px] gap-3 sm:gap-4 md:gap-5 lg:gap-6
+    "
                 >
-                    <AnimatedVideoBackground />
+                    <ProductBadge />
 
-                    <div
-                        className="relative z-10 flex flex-col items-center"
-                        style={{
-                            width: '100%',
-                            maxWidth: '1140px',
-                            height: '333px',
-                            gap: '28px',
-                            opacity: 1,
-                        }}
+                    {/* Title */}
+                    <h1
+                        className="
+        font-urbanist text-[#F0F0F0] font-extrabold tracking-tight
+        text-xl sm:text-3xl md:text-4xl lg:text-[54px]
+      "
                     >
-                        <ProductBadge />
+                        Our Services
+                    </h1>
 
-                        <h1
-                            style={{
-                                width: '100%',
-                                maxWidth: '907px',
-                                height: '96px',
-                                fontFamily: 'Urbanist, system-ui, -apple-system, sans-serif',
-                                fontWeight: 900,
-                                fontSize: '54px',
-                                lineHeight: '150%',
-                                letterSpacing: '-2%',
-                                textAlign: 'center',
-                                verticalAlign: 'middle',
-                                textTransform: 'capitalize',
-                                color: '#FFFFFF',
-                                opacity: 1,
-                                display: 'flex',
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                                margin: 0,
-                            }}
+                    {/* Buttons */}
+                    <div className="flex flex-row gap-2 sm:gap-3 md:gap-5 lg:gap-6 justify-center">
+                        <button
+                            className="
+          px-3 sm:px-4 md:px-6 
+          py-1.5 sm:py-2 md:py-3 
+          bg-[#00064B80] border border-white rounded-full 
+          text-white font-semibold 
+          text-[9px] sm:text-xs md:text-sm lg:text-base
+          hover:bg-blue-600 transition-all duration-300 backdrop-blur-sm
+        "
                         >
-                            Our Services
-                        </h1>
+                            Schedule a Call Today
+                        </button>
 
-                        <div
-                            style={{
-                                width: '393px',
-                                height: '50px',
-                                gap: '25px',
-                                opacity: 1,
-                                display: 'flex',
-                                flexDirection: 'row',
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                            }}
+                        <button
+                            className="
+          px-3 sm:px-4 md:px-6 
+          py-1.5 sm:py-2 md:py-3 
+          bg-[#00064B80] border border-white rounded-full 
+          text-white font-semibold 
+          text-[9px] sm:text-xs md:text-sm lg:text-base
+          hover:bg-black/30 transition-all duration-300 backdrop-blur-md
+        "
                         >
-                            <button
-                                style={{
-                                    width: '220px',
-                                    height: '50px',
-                                    paddingTop: '10px',
-                                    paddingRight: '14px',
-                                    paddingBottom: '10px',
-                                    paddingLeft: '14px',
-                                    gap: '8px',
-                                    opacity: 1,
-                                    borderRadius: '32px',
-                                    borderWidth: '1px',
-                                    borderStyle: 'solid',
-                                    borderColor: '#FFFFFF',
-                                    backgroundColor: '#00064B80',
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
-                                    cursor: 'pointer',
-                                    transition: 'all 0.3s ease',
-                                }}
-                            >
-                                <span
-                                    style={{
-                                        width: '192px',
-                                        height: '30px',
-                                        opacity: 1,
-                                        color: '#FFFFFF',
-                                        display: 'flex',
-                                        alignItems: 'center',
-                                        justifyContent: 'center',
-                                        fontFamily: 'system-ui, -apple-system, sans-serif',
-                                        fontSize: '16px',
-                                        fontWeight: '600',
-                                    }}
-                                >
-                                    Schedule a call Today
-                                </span>
-                            </button>
-
-                            <button
-                                style={{
-                                    width: '148px',
-                                    height: '44px',
-                                    paddingTop: '10px',
-                                    paddingRight: '14px',
-                                    paddingBottom: '10px',
-                                    paddingLeft: '14px',
-                                    gap: '8px',
-                                    opacity: 1,
-                                    borderRadius: '32px',
-                                    borderWidth: '1px',
-                                    borderStyle: 'solid',
-                                    borderColor: '#FFFFFF',
-                                    backgroundColor: '#00064B80',
-                                    backdropFilter: 'blur(4px)',
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
-                                    cursor: 'pointer',
-                                    transition: 'all 0.3s ease',
-                                }}
-                                onMouseEnter={(e) => (e.target.style.borderColor = '#FFFFFF')}
-                                onMouseLeave={(e) => (e.target.style.borderColor = '#FFFFFF')}
-                            >
-                                <span
-                                    style={{
-                                        width: '192px',
-                                        height: '30px',
-                                        opacity: 1,
-                                        color: '#FFFFFF',
-                                        display: 'flex',
-                                        alignItems: 'center',
-                                        justifyContent: 'center',
-                                        fontFamily: 'system-ui, -apple-system, sans-serif',
-                                        fontSize: '14px',
-                                        fontWeight: '600',
-                                    }}
-                                >
-                                    Explore Our Work
-                                </span>
-                            </button>
-                        </div>
+                            Explore Our Work
+                        </button>
                     </div>
-                </section>
-                <ServiceCards1/>
-                <ServiceCards2/>
-                <ServiceCards3/>
-                <ServiceCards4/>
-                <AboutForm/>
-                <Footer/>
-      </div>
+                </div>
+            </section>
+            <div className="w-full bottom-0 flex flex-col pt-20 space-y-16"
+            >
+
+                <div className='flex-shrink-0'>
+                    <ServiceCards1 />
+                </div>
+                <div className='flex-shrink-0'>
+                    <ServiceCards2 />
+                </div>
+                <div className='flex-shrink-0'>
+                    <ServiceCards3 />
+                </div>
+                <div className='flex-shrink-0'>
+                    <ServiceCards4 />
+                </div>
+                <div className='flex-shrink-0'>
+                    <AboutForm />
+                </div>
+                <div className='flex-shrink-0'>
+                    <Footer />
+                </div>
+            </div>
+        </div>
     )
 }
 

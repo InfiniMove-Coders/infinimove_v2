@@ -8,187 +8,89 @@ import Footer from '../components/Footer/Footer';
 
 const Projects = () => {
   return (
-      <div className="bg-black min-h-screen" style={{ overflowX: 'hidden' }}>
-        <div className="fixed top-0 left-0 right-0 z-50">
-          <Navbar />
-        </div>
-        {/* Hero Section */}
-        <section
-          className="relative bg-black flex items-center justify-center overflow-hidden rounded-[32px]"
-          style={{
-            width: '100%',
-            maxWidth: '1440px',
-            height: '530px',
-            paddingLeft: '150px',
-            paddingRight: '150px',
-            boxSizing: 'border-box',
-            margin: '0 auto',
-            marginTop: '78px',
-          }}
+    <div className="bg-black" style={{ overflowX: 'hidden' }}>
+      <div className="fixed top-0 left-0 right-0 z-50">
+        <Navbar />
+      </div>
+      {/* Hero Section */}
+      <section
+        className="
+            relative bg-black flex items-center justify-center overflow-hidden rounded-[32px]
+            w-full max-w-[1440px] h-[200px] lg:h-[500px] mx-auto mt-[78px]
+            px-4 sm:px-8 md:px-16 lg:px-[150px]
+          "
+      >
+        <AnimatedVideoBackground />
+
+        <div
+          className="
+              relative z-10 flex flex-col items-center text-center
+              w-full max-w-[1140px] gap-6
+            "
         >
-          <AnimatedVideoBackground />
-          <div
-            className="relative z-10 flex flex-col items-center"
-            style={{
-              width: '100%',
-              maxWidth: '1140px',
-              height: '333px',
-              gap: '28px',
-              opacity: 1,
-            }}
+          <ProductBadge />
+
+          {/* Title */}
+          <h1
+            className="
+                font-urbanist text-[#F0F0F0] font-extrabold tracking-tight
+                text-3xl sm:text-4xl md:text-5xl lg:text-[64px]
+              "
           >
-            <ProductBadge />
-            <h1
-              style={{
-                width: '100%',
-                maxWidth: '907px',
-                height: '96px',
-                fontFamily: 'Urbanist',
-                fontWeight: 900,
-                fontSize: '64px',
-                lineHeight: '150%',
-                letterSpacing: '-2%',
-                textAlign: 'center',
-                verticalAlign: 'middle',
-                textTransform: 'capitalize',
-                color: '#FFFFFF',
-                opacity: 1,
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                margin: 0,
-              }}
-            >
-              Our Success Stories
-            </h1>
+            Our Success Stories
+          </h1>
 
-            <p
-              style={{
-                width: '100%',
-                maxWidth: '890px',
-                height: '19px',
-                fontFamily: 'Roboto',
-                fontWeight: 500,
-                fontSize: '16px',
-                lineHeight: '121%',
-                letterSpacing: '0%',
-                textAlign: 'center',
-                verticalAlign: 'middle',
-                textTransform: 'capitalize',
-                color: '#D6D6D6',
-                opacity: 1,
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                margin: 0,
-              }}
-            >
-              Each project underscores our dedication to quality, innovation, and client success.
-            </p>
+          {/* Subtitle */}
+          <p
+            className="
+                text-gray-300 font-roboto font-medium
+                text-[6px] sm:text-sm md:text-base lg:text-[15px]
+                max-w-[890px] text-center leading-snug
+              "
+          >
+            Each project underscores our dedication to quality, innovation, and client success.
+          </p>
 
-            <div
-              style={{
-                width: '393px',
-                height: '50px',
-                gap: '25px',
-                opacity: 1,
-                display: 'flex',
-                flexDirection: 'row',
-                alignItems: 'center',
-                justifyContent: 'center',
-              }}
+          {/* Buttons Row */}
+          {/* Buttons */}
+          <div className="flex flex-row gap-2 sm:gap-3 md:gap-5 lg:gap-6 justify-center">
+            <button
+              className="
+                px-3 sm:px-4 md:px-6 
+                py-1.5 sm:py-2 md:py-3 
+                bg-[#0038A0CC] border border-white rounded-full 
+                text-white font-semibold 
+                text-[10px] sm:text-xs md:text-sm lg:text-base
+                hover:bg-blue-600 transition-all duration-300 backdrop-blur-sm
+              "
             >
-              <button
-                style={{
-                  width: '220px',
-                  height: '50px',
-                  paddingTop: '10px',
-                  paddingRight: '14px',
-                  paddingBottom: '10px',
-                  paddingLeft: '14px',
-                  gap: '8px',
-                  opacity: 1,
-                  borderRadius: '32px',
-                  borderWidth: '1px',
-                  borderStyle: 'solid',
-                  borderColor: '#FFFFFF',
-                  backgroundColor: '#00064B80',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  cursor: 'pointer',
-                  transition: 'all 0.3s ease',
-                }}
-              >
-                <span
-                  style={{
-                    width: '192px',
-                    height: '30px',
-                    opacity: 1,
-                    color: '#FFFFFF',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    fontFamily: 'Roboto',
-                    fontSize: '16px',
-                    fontWeight: '600',
-                  }}
-                >
-                  Schedule a call Today
-                </span>
-              </button>
+              Schedule a call Today
+            </button>
 
-              <button
-                style={{
-                  width: '148px',
-                  height: '44px',
-                  paddingTop: '10px',
-                  paddingRight: '14px',
-                  paddingBottom: '10px',
-                  paddingLeft: '14px',
-                  gap: '8px',
-                  opacity: 1,
-                  borderRadius: '32px',
-                  borderWidth: '1px',
-                  borderStyle: 'solid',
-                  borderColor: '#FFFFFF',
-                  backgroundColor:'#00064B80',
-                  backdropFilter: 'blur(4px)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  cursor: 'pointer',
-                  transition: 'all 0.3s ease',
-                }}
-                onMouseEnter={(e) => (e.target.style.borderColor = '#FFFFFF')}
-                onMouseLeave={(e) => (e.target.style.borderColor = '#FFFFFF')}
-              >
-                <span
-                  style={{
-                    width: '192px',
-                    height: '30px',
-                    opacity: 1,
-                    color: '#FFFFFF',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    fontFamily: 'Roboto',
-                    fontSize: '14px',
-                    fontWeight: '600',
-                  }}
-                >
-                  Explore Our Work
-                </span>
-              </button>
-            </div>
+            <button
+              className="
+                px-3 sm:px-4 md:px-6 
+                py-1.5 sm:py-2 md:py-3 
+                bg-black/20 border border-white rounded-full 
+                text-white font-semibold 
+                text-[10px] sm:text-xs md:text-sm lg:text-base
+                hover:bg-black/30 transition-all duration-300 backdrop-blur-md
+              "
+            >
+              Explore Our Work
+            </button>
           </div>
-        </section>
-        <div className="mb-24">
+
+        </div>
+      </section>
+      <div className="w-full bottom-0 flex flex-col pt-20 space-y-16">
+        <div className="flex-shrink-0">
           <FeaturedProjects />
         </div>
-        <div className="mt-24">
+        <div className="flex-shrink-0">
           <Footer />
         </div>
+      </div>
     </div>
   );
 };

@@ -12,7 +12,7 @@ const services = [
     icon: "/images/ServiceIcon.png",
   },
   {
-    title: "CLead Generation Bots",
+    title: "Lead Generation Bots",
     options: "30 options available",
     icon: "/images/ServiceIcon.png",
   },
@@ -22,7 +22,7 @@ const services = [
     icon: "/images/ServiceIcon.png",
   },
   {
-    title: "E Commerce Support",
+    title: "E-Commerce Support",
     options: "30 options available",
     icon: "/images/ServiceIcon.png",
   },
@@ -30,145 +30,50 @@ const services = [
 
 const ServiceCards2 = () => {
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        padding: 0,
-        gap: 38,
-        width: 1310,
-        height: 345,
-        margin: "0 auto",
-        marginBottom:"70px",
-      }}
-    >
+    <div className="flex flex-col items-center gap-8 w-full max-w-[1310px] mx-auto">
       {/* Headline and Subtitle */}
-      <div>
-        <h1
-          style={{
-            width: 1310,
-            height: 52,
-            fontFamily: "Manrope",
-            fontStyle: "normal",
-            fontWeight: 800,
-            fontSize: 40,
-            lineHeight: "52px",
-            textAlign: "center",
-            letterSpacing: "-0.03em",
-            color: "#F0F0F0",
-            margin: 0,
-            alignSelf: "stretch",
-            flexGrow: 0,
-          }}
-        >
+      <div className="text-center">
+        <h1 className="font-manrope font-extrabold text-[22px] sm:text-[28px] md:text-[32px] lg:text-[40px] leading-tight tracking-[-0.03em] text-[#F0F0F0]">
           AI Chatbot Solutions
         </h1>
-        <div
-          style={{
-            width: 1310,
-            height: 20,
-            fontFamily: "Manrope",
-            fontStyle: "normal",
-            fontWeight: 300,
-            fontSize: 20,
-            lineHeight: "20px",
-            textAlign: "center",
-            letterSpacing: "-0.03em",
-            color: "#F0F0F0",
-            marginTop: 10,
-            alignSelf: "stretch",
-            flexGrow: 0,
-          }}
-        >
+        <p className="mt-2 font-manrope font-light text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] leading-snug tracking-[-0.03em] text-[#F0F0F0]">
           Enhance engagement and support with intelligent AI.
-        </div>
+        </p>
       </div>
 
       {/* Cards Row */}
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          gap: 34,
-          justifyContent: "center",
-          width: "100%",
-        }}
-      >
+      <div className="flex gap-2 sm:gap-3 md:gap-4 lg:gap-[34px] w-full justify-center">
         {services.map((service) => (
           <div
             key={service.title}
-            style={{
-              borderRadius: 30,
-              padding: 1,
-              background:
-                "linear-gradient(71.56deg, rgba(255, 255, 255, 0.25) 14.75%, #0038A0 57.63%, #8083A5 118.98%, #FFFFFF 166.97%, rgba(0, 8, 20, 0.61) 168.49%)",
-              boxSizing: "border-box",
-              flex: "none",
-              order: 0,
-              flexGrow: 0,
-            }}
+            className="flex-none rounded-[12px] lg:rounded-[30px] p-[1px] bg-gradient-to-tr from-white/25 via-[#0038A0] to-[#8083A5]"
           >
             <div
-              style={{
-                width: 234,
-                height: 217,
-                background: "black",
-                borderRadius: 29,
-                boxShadow: "0 2px 10px 0 rgba(24,49,167,0.08)",
-                padding: "30px 45px",
-                gap: 10,
-                justifyContent: "center",
-                transition: "box-shadow 0.2s",
-              }}
+              className="
+                w-[60px] sm:w-[130px] md:w-[170px] lg:w-[234px] 
+                h-[60px] sm:h-[140px] md:h-[180px] lg:h-[217px] 
+                bg-black rounded-[11px] lg:rounded-[29px] 
+                shadow-[0_2px_10px_rgba(24,49,167,0.08)] 
+                flex flex-col justify-start
+                px-2 sm:px-3 md:px-4 lg:px-[45px] 
+                py-2 sm:py-3 md:py-4 lg:py-[30px]
+              "
             >
-              <div
-                style={{
-                  backgroundColor: "#0464DA",
-                  borderRadius: 12,
-                  marginLeft: 0,
-                  padding: 7,
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  width: 42,
-                  height: 42,
-                  flexShrink: 0,
-                }}
-              >
+              {/* Icon */}
+              <div className="bg-[#0464DA] rounded-[6px] sm:rounded-[8px] lg:rounded-[12px] w-[15px] sm:w-[28px] md:w-[36px] lg:w-[42px] h-[15px] sm:h-[28px] md:h-[36px] lg:h-[42px] flex items-center justify-center">
                 <img
                   src={service.icon}
                   alt={service.title}
-                  style={{ width: 42, height: 42, objectFit: "contain" }}
+                  className="w-[70%] h-[70%] object-contain"
                 />
               </div>
-              <div
-                style={{
-                  color: "#F0F0F0",
-                  fontSize: '15px',
-                  fontStyle:'bold',
-                  fontFamily: "Manrope",
-                  fontWeight: 700,
-                  marginLeft: 0,
-                  marginTop: 20,
-                  letterSpacing:'-2%',
-                  flex: 1,
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                }}
-              >
-                <div style={{ marginBottom: 15, lineHeight: 1.2 }}>
+
+              {/* Text */}
+              <div className="mt-2 sm:mt-3 lg:mt-5 text-[#F0F0F0] font-manrope font-bold leading-snug text-left">
+                <div className="text-[5px] sm:text-[10px] md:text-[13px] lg:text-[15px] leading-tight whitespace-pre-line">
                   {service.title}
                 </div>
-                <div
-                  style={{
-                    fontSize: '12px',
-                    color: "#41529e",
-                    fontWeight: 500,
-                    marginTop: "20px",
-                  }}
-                >
+                <div className="mt-1 sm:mt-2 lg:mt-3 text-[3px] sm:text-[9px] md:text-[11px] lg:text-[12px] font-medium text-[#41529e]">
                   {service.options}
                 </div>
               </div>
