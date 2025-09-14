@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 /**
@@ -8,14 +7,32 @@ import React from 'react';
  */
 const StatCard = ({ value, label }) => {
   return (
-    <div className="text-center group">
+    <div
+      className="
+        text-center group
+        h-[30px] sm:h-[35px] md:h-[40px] lg:h-auto
+        flex flex-col justify-center
+      "
+    >
       {/* Statistics value */}
-      <div className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-2 font-urbanist group-hover:text-blue-400 transition-colors duration-300">
+      <div
+        className="
+          text-[8px] sm:text-[9px] md:text-[10px] lg:text-5xl
+          font-bold text-white mb-0.5
+          font-urbanist group-hover:text-blue-400
+          transition-colors duration-300
+        "
+      >
         {value}
       </div>
-      
+
       {/* Statistics label */}
-      <div className="text-gray-300 text-sm md:text-base font-roboto">
+      <div
+        className="
+          text-[5px] sm:text-[6px] md:text-[7px] lg:text-base
+          text-gray-300 font-roboto
+        "
+      >
         {label}
       </div>
     </div>

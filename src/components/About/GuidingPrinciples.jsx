@@ -2,50 +2,37 @@ import React from "react";
 
 const GuidingPrinciples = () => (
   <div
-    style={{
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "center",
-      minHeight: "100vh",
-      justifyContent: "center",
-      background: "black"
-    }}
+    className="flex flex-col items-center justify-center lg:h-[500px] bg-black px-4"
   >
     {/* Heading */}
     <h1
-      style={{
-        fontFamily:'urbanist',
-        color: "#F0F0F0",
-        fontSize: "48px",
-        fontWeight: 900,
-        margin: 0,
-        letterSpacing: "-2px"
-      }}
+      className="
+        font-urbanist font-bold text-[#F0F0F0] text-center
+        text-[16px] sm:text-[24px] md:text-[32px] lg:text-[48px]
+      "
     >
       OUR GUIDING PRINCIPLES
     </h1>
+
     {/* Subtitle */}
     <p
-      style={{
-        color: "#ABABAB",
-        fontSize: "24px",
-        marginTop: "18px",
-        marginBottom: "40px",
-        fontWeight: 700,
-        textAlign: "center"
-      }}
+      className="
+        font-urbanist font-bold text-center text-[#ABABAB] mt-4 mb-10
+        text-[6px] sm:text-[12px] md:text-[16px] lg:text-[24px]
+      "
     >
       Examine our recent projects and the significant impact we've delivered for our clients
     </p>
+
     {/* Guiding Principles Image */}
     <img
       src="/images/GuidingPrinciple.png"
       alt="Guiding Principles"
-      style={{
-        width: "470px",
-        height: "auto",
-        marginTop: "16px"
-      }}
+      className="
+        mt-4
+        w-[120px] sm:w-[200px] md:w-[300px] lg:w-[470px]
+        h-auto
+      "
     />
   </div>
 );

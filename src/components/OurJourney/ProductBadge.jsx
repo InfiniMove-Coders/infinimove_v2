@@ -1,61 +1,43 @@
+import React from 'react';
+
 const ProductBadge = () => {
-    return (
-        <div>
-            <div
-                className="inline-flex items-center border rounded-[36px]"
-                style={{
-                    width: '120px',
-                    height: '33px',
-                    paddingTop: '8px',
-                    paddingRight: '14px',
-                    paddingBottom: '8px',
-                    paddingLeft: '14px',
-                    borderRadius: '36px',
-                    borderWidth: '0.5px',
-                    borderColor: '#6B7280'
-                }}
-            >
-                <div
-                    className="flex items-center justify-center gap-2"
-                    style={{
-                        width: '359px',
-                        height: '17px',
-                    }}
-                >
-                    <span
-                        style={{
-                            fontFamily: 'Urbanist',
-                            fontWeight: 300,
-                            fontSize: '14px',
-                            lineHeight: '121%',
-                            letterSpacing: '0%',
-                            textAlign: 'center',
-                            verticalAlign: 'middle',
-                            textTransform: 'capitalize',
-                            color: '#D1D5DB'
-                        }}
-                    >
-                        Our
-                    </span>
-                    <span
-                        style={{
-                            fontFamily: 'Urbanist',
-                            fontWeight: 700,
-                            fontSize: '14px',
-                            lineHeight: '121%',
-                            letterSpacing: '0%',
-                            textAlign: 'center',
-                            verticalAlign: 'middle',
-                            textTransform: 'capitalize',
-                            color: '#FFFFFF'
-                        }}
-                    >
-                        Journey
-                    </span>
-                </div>
-            </div>
+  return (
+    <div className="flex justify-center">
+      <div
+        className="
+          inline-flex items-center border border-gray-400 rounded-[36px]
+          w-[120px] h-[33px] px-[14px] py-[8px]
+          max-md:w-[100px] max-md:h-[26px] max-md:px-3 max-md:py-1
+          max-sm:w-[80px] max-sm:h-[22px] max-sm:px-2 max-sm:py-0.5
+        "
+      >
+        <div
+          className="
+            flex items-center justify-center gap-2
+            w-full h-[17px]
+            max-md:h-[14px] max-sm:h-[12px]
+          "
+        >
+          <span
+            className="
+              font-urbanist font-light text-[14px] leading-[121%] text-gray-300 capitalize
+              max-md:text-[10px] max-sm:text-[8px]
+            "
+          >
+            Our
+          </span>
+          <span
+            className="
+              font-urbanist font-bold text-[14px] leading-[121%] text-white capitalize
+              max-md:text-[10px] max-sm:text-[8px]
+            "
+          >
+            Journey
+          </span>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default ProductBadge;

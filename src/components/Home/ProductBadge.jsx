@@ -2,72 +2,46 @@ import React from 'react';
 
 const ProductBadge = () => {
   return (
-    <div>
+    <div className="flex justify-center">
       <div
-        className="inline-flex items-center border rounded-[36px]"
-        style={{
-          width: '384px',
-          height: '33px',
-          paddingTop: '8px',
-          paddingRight: '14px',
-          paddingBottom: '8px',
-          paddingLeft: '14px',
-          borderRadius: '36px',
-          borderWidth: '0.5px',
-          borderColor: '#6B7280'
-        }}
+        className="
+          inline-flex items-center border border-gray-400 rounded-[36px]
+          w-[360px] h-[33px] px-[14px] py-[5px]
+          max-md:w-[300px] max-md:h-[26px] max-md:px-3 max-md:py-1
+          max-sm:w-[220px] max-sm:h-[22px] max-sm:px-2 max-sm:py-0.5
+        "
       >
         <div
-          className="flex items-center justify-center gap-2"
-          style={{
-            width: '359px',
-            height: '17px',
-          }}
+          className="
+            flex items-center justify-center gap-1
+            w-[359px] h-[17px]
+            max-md:w-[280px] max-md:h-[14px]
+            max-sm:w-[200px] max-sm:h-[12px]
+          "
         >
           <span
-            style={{
-              fontFamily: 'Urbanist, system-ui, -apple-system, sans-serif',
-              fontWeight: 300,
-              fontSize: '14px',
-              lineHeight: '121%',
-              letterSpacing: '0%',
-              textAlign: 'center',
-              verticalAlign: 'middle',
-              textTransform: 'capitalize',
-              color: '#D1D5DB'
-            }}
+            className="
+              font-urbanist font-light text-[14px] text-gray-300 capitalize
+              max-md:text-[10px] max-sm:text-[8px]
+            "
           >
-            delivering end to end •
+            delivering End To End .
           </span>
           <span
-            style={{
-              fontFamily: 'Urbanist, system-ui, -apple-system, sans-serif',
-              fontWeight: 700,
-              fontSize: '14px',
-              lineHeight: '121%',
-              letterSpacing: '0%',
-              textAlign: 'center',
-              verticalAlign: 'middle',
-              textTransform: 'capitalize',
-              color: '#FFFFFF'
-            }}
+            className="
+              font-urbanist font-bold text-[14px] text-white capitalize
+              max-md:text-[10px] max-sm:text-[8px]
+            "
           >
             B2B | B2C | SAAS | SPA
           </span>
           <span
-            style={{
-              fontFamily: 'Urbanist, system-ui, -apple-system, sans-serif',
-              fontWeight: 300,
-              fontSize: '14px',
-              lineHeight: '121%',
-              letterSpacing: '0%',
-              textAlign: 'center',
-              verticalAlign: 'middle',
-              textTransform: 'capitalize',
-              color: '#D1D5DB'
-            }}
+            className="
+              font-urbanist font-light text-[14px] text-gray-300 capitalize
+              max-md:text-[10px] max-sm:text-[8px]
+            "
           >
-            Products
+            Prods
           </span>
         </div>
       </div>

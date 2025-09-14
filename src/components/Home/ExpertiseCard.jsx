@@ -1,28 +1,26 @@
-
 import React from 'react';
 
-/**
- * ExpertiseCard - Individual service card component
- * @param {string} title - Card title
- * @param {string} description - Card description text
- * @param {string} icon - Icon or symbol for the card
- */
-const ExpertiseCard = ({ title, description, icon }) => {
+const ExpertiseCard = ({ title, description,}) => {
   return (
-    <div className="bg-black/30 border border-gray-600/50 rounded-xl p-6 hover:bg-black/40 transition-all duration-300 hover:border-gray-500/70 group">
-      {/* Icon container */}
-      <div className="text-2xl mb-4 group-hover:scale-110 transition-transform duration-300">
-        {icon}
-      </div>
+    <div className="bg-black border border-[#0038A0] rounded-lg 
+                    p-2 sm:p-3 md:p-5
+                    hover:bg-black hover:border-gray-500/70 
+                    transition-all duration-300 transform hover:scale-105
+                    flex flex-col items-center justify-center
+                    h-19 sm:h-25 md:h-44 lg:h-52">
       
-      {/* Card title */}
-      <h3 className="text-white font-bold text-lg md:text-xl mb-3 font-urbanist">
+      {/* Title */}
+      <h3 className="text-white font-bold text-[9px] sm:text-[12px] md:text-sm lg:text-[33px] px-4 mb-1 sm:mb-1 md:mb-2 font-urbanist text-center">
         {title}
       </h3>
       
-      {/* Card description */}
-      <p className="text-gray-300 text-sm md:text-base leading-relaxed font-roboto">
+      {/* Description */}
+      <p className="text-gray-300 text-[3.5px] sm:text-[10px] md:text-sm lg:text-[13px] leading-relaxed font-roboto text-left self-start mb-2 lg:mb-4">
         {description}
+      </p>
+
+      <p className="text-gray-300 text-[3.5px] sm:text-[10px] md:text-sm lg:text-[13px] leading-relaxed font-roboto text-left items-left self-start ">
+        Learn More
       </p>
     </div>
   );
