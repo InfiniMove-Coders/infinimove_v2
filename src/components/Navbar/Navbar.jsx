@@ -20,18 +20,18 @@ const Navbar = () => {
   const getNavLinkClasses = (isActive, width) =>
     `font-[Plus Jakarta Sans] font-semibold cursor-pointer relative flex items-center justify-center
      ${width ? `w-[${width}px]` : "w-auto"} 
-     text-[7px] sm:text-[8px] md:text-[10px] lg:text-[17px]   
+     text-[7px] sm:text-[8px] md:text-[12px] lg:text-[17px]   
      ${isActive ? "text-[#F0F0F0] opacity-100" : "text-white opacity-80"}
      hover:text-white transition-colors`;
 
   return (
     <nav className="w-[90%] mx-auto mt-[10px] flex justify-center py-1">
-      <div className="relative w-[95%] sm:w-[90%] md:w-[80%] rounded-full bg-transparent backdrop-blur-[2px] z-10">
+      <div className="relative w-[95%] sm:w-[90%] md:w-[90%] rounded-full bg-transparent backdrop-blur-[2px] z-10">
         <div
           className="
             gradient-border relative rounded-full bg-transparent backdrop-blur-md 
             flex items-center justify-between
-            h-[22px] sm:h-[28px] md:h-[36px] lg:h-[75px] 
+            h-[22px] sm:h-[28px] md:h-[50px] lg:h-[75px] 
             px-4 sm:px-6 md:px-8 lg:px-10
           "
         >

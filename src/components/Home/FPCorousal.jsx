@@ -87,19 +87,19 @@ export default function FPCorousal() {
   };
 
   return (
-    <section className="w-full h-[150px] lg:h-auto bg-black flex flex-col items-center text-urbanist">
+    <section className="w-full h-[150px] lg:h-auto md:h-auto bg-black flex flex-col items-center text-urbanist">
       {/* Header */}
       <div className="text-center px-4 sm:px-6">
-        <div className="uppercase font-extrabold text-[18px] text-[#F0F0F0] mb-1 tracking-widest sm:text-[36px] md:text-[42px]">
+        <div className="uppercase font-extrabold text-[18px] text-[#F0F0F0] mb-1 tracking-widest sm:text-[36px] md:text-[42px] lg:text-[45px]">
           Featured Projects
         </div>
-        <div className="text-[#ABABAB] text-[8px] font-medium sm:text-[14px] md:text-[16px]">
+        <div className="text-[#ABABAB] text-[8px] font-medium sm:text-[14px] md:text-[16px] lg:text-[18px]">
           Discover how we can elevate your business.
         </div>
       </div>
 
       {/* Carousel */}
-      <div className="w-[350px] lg:w-[1050px] mt-2 px-4">
+      <div className="w-[350px] lg:w-[1050px] md:w-[700px] mt-2 px-4">
         <Slider {...settings}>
           {projectCards.map((card, idx) => (
             <div key={idx} className="p-2">
@@ -114,12 +114,12 @@ export default function FPCorousal() {
                   className={`rounded-md flex flex-row items-stretch w-full h-full ${cardBg[idx]} ${cardText[idx]} p-4 md:p-6`}
                 >
                   {/* Left text/blurb */}
-                  <div className="flex-1 flex flex-col justify-between lg:p-3 pr-2 md:pr-6 py-1">
+                  <div className="flex-1 flex flex-col justify-between lg:p-3 pr-2 md:p-1 py-1">
                     <div>
-                      <h3 className="text-[7px] font-bold mb-1 sm:text-[20px] md:text-[24px]">
+                      <h3 className="text-[7px] font-bold mb-1 sm:text-[20px] md:text-[14px] lg:text-[20px]">
                         AI-Powered Customer Service Revolution
                       </h3>
-                      <div className="opacity-90 mb-2 text-[5px] font-400 leading-snug sm:text-[12px] md:text-[13px]">
+                      <div className="opacity-90 mb-2 text-[5px] font-400 leading-snug sm:text-[12px] md:text-[10px] lg:text-[18px]">
                         Implemented conversational AI that reduced response time
                         by 80% and increased customer satisfaction to 95%.
                       </div>
@@ -127,19 +127,19 @@ export default function FPCorousal() {
                         {card.stats.map((stat, i) => (
                           <li key={i} className="flex items-center ">
                             <span
-                              className={`${stat.color} text-[5px] font-bold sm:text-base md:text-[15px]`}
+                              className={`${stat.color} text-[5px] font-bold sm:text-base md:text-[10px] lg:text-[12px]`}
                             >
                               ★
                             </span>
-                            <span className="text-[5px] font-500 sm:text-[12px] md:text-[13px]">
+                            <span className="text-[5px] font-500 sm:text-[12px] md:text-[10px] lg:text-[12px]">
                               {stat.text}
                             </span>
                           </li>
                         ))}
                       </ul>
                       {/* Quote Box */}
-                      <div className="rounded-md bg-[#0038A0] py-2 px-2 lg:mt-2 lg:px-4 lg:py-3 flex shadow-2xl items-center lg:gap-4 gap-2 w-full h-[30px] lg:w-full lg:h-[100px] md:w-[463px] sm:flex-row sm:items-start">
-                        <div className="w-7 h-4 lg:w-12 lg:h-12 rounded-full bg-gray-200 flex items-center justify-center overflow-hidden">
+                      <div className="rounded-md bg-[#0038A0] py-2 px-2 lg:mt-2 lg:px-4 lg:py-3 flex shadow-2xl items-center lg:gap-4 gap-2  w-full h-[30px] lg:w-full lg:h-[100px] md:w-[250px] md:h-[80px] sm:flex-row sm:items-start">
+                        <div className="w-7 h-4 lg:w-12 lg:h-12 md:h-12 md:w-12 rounded-full bg-gray-200  flex items-center justify-center overflow-hidden">
                           <img
                             src={card.quote.avatar}
                             alt="avatar"
@@ -147,12 +147,12 @@ export default function FPCorousal() {
                           />
                         </div>
                         <div>
-                          <div className="italic text-[3px] leading-snug mb-1 sm:text-[12px] md:text-[13px]">
+                          <div className="italic text-[3px] leading-snug mb-1 sm:text-[12px] md:text-[10px] lg:text-[12px]">
                             {card.quote.text}
                           </div>
-                          <div className="font-bold text-[3px] sm:text-[12px] md:text-[13px]">
+                          <div className="font-bold text-[3px] sm:text-[12px] md:text-[10px] lg:text-[11px]">
                             {card.quote.name}
-                            <span className="font-bold text-[3px] sm:text-[12px] md:text-[13px]">
+                            <span className="font-bold text-[3px] sm:text-[12px] md:text-[9px] lg:text-[11px]">
                               , {card.quote.title}
                             </span>
                           </div>
@@ -161,11 +161,11 @@ export default function FPCorousal() {
                     </div>
                   </div>
                   {/* Right image */}
-                  <div className="w-[180px] md:w-[500px] flex-shrink-0 flex items-center justify-center">
+                  <div className="w-[180px] md:w-[400px] flex-shrink-0 flex items-center justify-center">
                     <img
                       src={card.image}
                       alt="project"
-                      className="rounded-md w-full object-cover sm:h-[200px] md:h-[300px]"
+                      className="rounded-md w-full object-cover sm:h-[200px] md:h-[220px] md:w-[320px]"
                     />
                   </div>
                 </div>

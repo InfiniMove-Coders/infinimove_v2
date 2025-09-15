@@ -2,13 +2,13 @@ import React from 'react';
 
 const AboutForm = () => {
     return (
-        <section className="w-full bg-black h-[70px] lg:h-[450px] flex flex-col items-center sm:py-8 md:py-10 px-2 sm:px-4">
+        <section className="w-full bg-black h-[70px] md:h-[350px] lg:h-[450px] flex flex-col items-center sm:py-8 md:py-10 px-2 sm:px-4">
             {/* Main Wrapper: Flex row 60:40 */}
             <div className="flex flex-row justify-center items-start w-full gap-2 sm:gap-3 md:gap-4">
 
                 {/* Left: Gradient border wrapper - 60% */}
                 <div className="flex-[0.6] min-w-[140px] sm:min-w-[220px] md:min-w-[300px] lg:min-w-[704px]
-                        h-[180px] sm:h-[200px] md:h-[220px] lg:h-[484px]
+                        h-[180px] sm:h-[200px] md:h-[330px] lg:h-[484px]
                         rounded-md p-[1px]"
                     style={{
                         background: 'linear-gradient(180deg, #FFFFFF 0%, #0038A0 41%, #8083A5 73%, #FFFFFF 100%)'
@@ -17,7 +17,7 @@ const AboutForm = () => {
                     {/* Inner black card */}
                     <div className="bg-black rounded-md flex flex-col justify-center h-full p-2 sm:p-3 md:p-4">
                         <h2 className="text-white uppercase text-center font-urbanist font-bold
-                           text-[6px] sm:text-[10px] md:text-[14px] lg:text-[33px] mb-1">
+                           text-[6px] sm:text-[10px] md:text-[20px] lg:text-[33px] mb-1">
                             READY TO BUILD YOUR NEXT SOLUTION
                         </h2>
                         <p className="text-gray-300 text-center font-urbanist
@@ -82,19 +82,19 @@ const AboutForm = () => {
                         ].map((info) => (
                             <div
                                 key={info.title}
-                                className="bg-[#F0F0F0] rounded-md p-2 sm:p-3 md:p-9 lg:p-4 flex flex-col justify-start gap-1 shadow h-full"
+                                className="bg-[#F0F0F0] rounded-md p-2 sm:p-3 md:p-3 lg:p-4 flex flex-col justify-start gap-1 shadow h-full"
                             >
                                 {/* Icon + Title Row */}
                                 <div className="flex items-center gap-1 sm:gap-1 md:gap-1">
-                                    <span className="bg-blue-600 rounded-xl p-1 sm:p-1 md:p-1 flex items-center justify-center h-4 w-4 sm:h-4 sm:w-4 md:h-5 md:w-5 lg:h-10 lg:w-10">
-                                        <img src={info.icon} alt="" className="h-2 w-2 sm:h-2.5 sm:w-2.5 md:h-2.5 md:w-2.5 lg:h-6 lg:w-6 object-contain" />
+                                    <span className="bg-blue-600 rounded-xl p-1 sm:p-1 flex items-center justify-center h-4 w-4 sm:h-4 sm:w-4 md:h-7 md:w-7 lg:h-10 lg:w-10">
+                                        <img src={info.icon} alt="" className="h-2 w-2 sm:h-2.5 sm:w-2.5 md:h-4 md:w-4 lg:h-6 lg:w-6 object-contain" />
                                     </span>
-                                    <div className="font-bold text-[4px] sm:text-[5px] md:text-[5px] lg:text-[16px]">
+                                    <div className="font-bold text-[4px] sm:text-[5px] md:text-[9px] lg:text-[16px]">
                                         {info.title}
                                     </div>
                                 </div>
                                 {/* Text Below */}
-                                <div className="whitespace-pre-line text-[4px] sm:text-[3px] md:text-[3px] lg:text-[12px]">
+                                <div className="whitespace-pre-line text-[4px] sm:text-[3px] md:text-[8px] lg:text-[12px]">
                                     {info.text}
                                 </div>
                             </div>

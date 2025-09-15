@@ -64,9 +64,9 @@ const Footer = () => {
           <div className="">
             <div className="font-semibold text-[5px] sm:text-sm md:text-[14px] lg:text-base mb-1">Socials</div>
             <ul className="space-y-1 text-[4px] sm:text-[11px] md:text-[12px] lg:text-sm">
-              <li><a href="#" className="hover:underline">LinkedIn</a></li>
-              <li><a href="#" className="hover:underline">Twitter</a></li>
-              <li><a href="#" className="hover:underline">Instagram</a></li>
+              <li><a href="https://www.linkedin.com/groups/14501329/" className="hover:underline">LinkedIn</a></li>
+              <li><a href="https://x.com/infinimove18076" className="hover:underline">Twitter</a></li>
+              <li><a href="https://www.instagram.com/infini.move?utm_source=ig_web_button_share_sheet&igsh=MXNtbHQ0ZzZpNndmbw==" className="hover:underline">Instagram</a></li>
             </ul>
           </div>
         </div>

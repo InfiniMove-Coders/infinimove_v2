@@ -50,8 +50,8 @@ const ServiceCards3 = () => {
                        bg-gradient-to-tr from-white/25 via-[#0038A0] to-[#8083A5]"
           >
             <div
-              className="w-[60px] sm:w-[130px] md:w-[170px] lg:w-[234px] 
-                         h-[60px] sm:h-[140px] md:h-[180px] lg:h-[217px] 
+              className="w-[60px] sm:w-[130px] md:w-[140px] lg:w-[234px] 
+                         h-[60px] sm:h-[140px] md:h-[150px] lg:h-[217px] 
                          bg-black rounded-[11px] lg:rounded-[29px] 
                          shadow-[0_2px_10px_rgba(24,49,167,0.08)] 
                          flex flex-col justify-start

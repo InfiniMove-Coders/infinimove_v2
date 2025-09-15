@@ -42,7 +42,7 @@ const OurBlogs = ({ onCardClick }) => {
 
   return (
     <section
-      className="flex flex-col items-center w-full max-w-[1440px] mx-auto h-[200px] lg:h-[700px]"
+      className="flex flex-col items-center w-full max-w-[1440px] mx-auto h-[200px] md:h-auto lg:h-[700px]"
       style={{ background: 'black', }}
     >
       {/* Header */}
@@ -61,7 +61,7 @@ const OurBlogs = ({ onCardClick }) => {
 
       {/* Blog Cards Grid */}
       <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 gap-x-6 gap-y-6 w-full px-3 sm:px-4">
-        {blogPosts.slice().map((post, idx) => ( // ensure only 4 posts = 2 rows
+        {blogPosts.slice().map((post, idx) => ( 
           <div
             key={idx}
             className="rounded-[16px] p-[1.5px] mx-auto w-full"
@@ -76,7 +76,7 @@ const OurBlogs = ({ onCardClick }) => {
               if (onCardClick) onCardClick(idx);
             }}
           >
-            <div className="rounded-[16px] bg-[#000814] flex flex-row sm:flex-row items-center sm:items-stretch px-2 sm:px-5 py-4 sm:py-5 shadow-md min-h-[100px] sm:min-h-[260px] w-full">
+            <div className="rounded-[16px] bg-[#000814] flex flex-row sm:flex-row items-center sm:items-stretch px-2 sm:px-5 py-4 sm:py-5 shadow-md min-h-[100px] sm:min-h-[260px] md:min-h-[190px] w-full">
               {/* Left content */}
               <div className="flex flex-col flex-1">
                 {/* Tags */}
@@ -84,18 +84,18 @@ const OurBlogs = ({ onCardClick }) => {
                   {post.tags.map((tag, i) => (
                     <div
                       key={i}
-                    className="bg-[#000814] min-w-[12px] lg:h-[20px]  h-[7px] border border-[#FFE2E2] text-[#F0F0F0] text-[3px] sm:text-[12px] font-extrabold px-1 py-[0.5px] rounded-xl font-[Urbanist]"
+                    className="bg-[#000814] min-w-[12px] md:h-[15px] lg:h-[20px]  h-[7px] border border-[#FFE2E2] text-[#F0F0F0] text-[3px] sm:text-[12px] md:text-[10px] font-extrabold px-1 py-[0.5px] rounded-xl font-[Urbanist]"
                     >
                       {tag}
                     </div>
                   ))}
                 </div>
                 {/* Title */}
-                <h4 className="font-bold text-[7px] sm:text-[18px] md:text-[28px] text-[#FFFFFF] leading-snug mb-1 font-[Urbanist]">
+                <h4 className="font-bold text-[7px] sm:text-[18px] md:text-[10px] lg:text-[30px] text-[#FFFFFF] leading-snug mb-1 font-[Urbanist]">
                   {post.title}
                 </h4>
                 {/* Description */}
-                <p className="text-[4px] sm:text-[13px] md:text-[14px] text-[#ABABAB] leading-snug mb-2 font-[Urbanist]">
+                <p className="text-[4px] sm:text-[13px] md:text-[8px] lg:text-[15px] text-[#ABABAB] leading-snug mb-2 font-[Urbanist]">
                   {post.description}
                 </p>
                 {/* Author/Date */}
@@ -103,9 +103,9 @@ const OurBlogs = ({ onCardClick }) => {
                   <img
                     src={post.avatar}
                     alt="Author"
-                    className="w-[7px] h-[7px] sm:w-[16px] sm:h-[16px] md:w-[18px] md:h-[18px] rounded-full object-cover"
+                    className="w-[7px] h-[7px] sm:w-[16px] sm:h-[16px] md:w-[18px] md:h-[18px] lg:h-[20px] lg:w-[20px] rounded-full object-cover"
                   />
-                  <span className="text-[4px] sm:text-[13px] md:text-[14px] text-[#FFF] font-normal font-[Urbanist]">{`By ${post.author} | ${post.date}`}</span>
+                  <span className="text-[4px] sm:text-[13px] md:text-[10px] text-[#FFF] font-normal font-[Urbanist]">{`By ${post.author} | ${post.date}`}</span>
                 </div>
               </div>
               {/* Right image */}
@@ -113,7 +113,7 @@ const OurBlogs = ({ onCardClick }) => {
                 <img
                   src={post.image}
                   alt="blog"
-                  className="rounded-md w-[70px] h-[50px] sm:w-[200px] sm:h-[130px] md:w-[280.5px] md:h-[172px] object-cover"
+                  className="rounded-md w-[70px] h-[50px] sm:w-[200px] sm:h-[130px] md:w-[180px] md:h-[110px] object-cover"
                 />
               </div>
             </div>

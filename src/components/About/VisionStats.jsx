@@ -8,8 +8,8 @@ const stats = [
 ];
 
 const VisionStats = () => (
-  <section className="w-full  h-[200px] lg:h-auto bg-black flex flex-col items-center lg:py-12 px-4">
-    {/* Title */}
+  <section className="w-full  h-[200px] md:h-auto lg:h-auto bg-black flex flex-col items-center lg:py-12 px-4">
+    {/* Title */} 
     <h2
       className="
         font-urbanist font-bold text-[#F0F0F0] text-center
@@ -23,7 +23,7 @@ const VisionStats = () => (
     <p
       className="
         font-urbanist text-[#ABABAB] text-center mt-5 mb-16
-        text-[7px] sm:text-[12px] md:text-[16px] lg:text-[24px] max-w-[1400px]
+        text-[7px] sm:text-[12px] md:text-[14px] lg:text-[24px] max-w-[1400px]
       "
     >
       To empower businesses with state-of-the-art, reliable digital solutions that foster growth,
@@ -47,14 +47,14 @@ const VisionStats = () => (
             bg-[#060606] rounded-md shadow-[0_0_0_1px_#2359d9]
             transition-all mx-auto
 
-            w-[70px] h-[50px] sm:w-[90px] sm:h-[100px] md:w-[130px] md:h-[120px]
+            w-[70px] h-[50px] sm:w-[90px] sm:h-[100px] md:w-[160px] md:h-[120px]
             lg:w-[278px] lg:h-[163px] 
           "
         >
           {/* Icon */}
           <img
             className="
-              w-[18px] h-[12px] sm:w-[22px] sm:h-[14px] md:w-[28px] md:h-[16px]
+              w-[18px] h-[12px] sm:w-[22px] sm:h-[14px] md:w-[35px] md:h-[20px]
               lg:w-[63px] lg:h-[34px]
             "
             src="/Vector.svg"
@@ -65,7 +65,7 @@ const VisionStats = () => (
           <div
             className="
               font-urbanist font-bold text-center text-[#F0F0F0]
-              text-[9px] sm:text-[12px] md:text-[16px] lg:text-[36px]
+              text-[9px] sm:text-[12px] md:text-[20px] lg:text-[36px]
               mt-1 
             "
           >
@@ -76,7 +76,7 @@ const VisionStats = () => (
           <div
             className="
               font-urbanist font-medium text-center text-[#F0F0F0]
-              text-[5px] sm:text-[8px] md:text-[10px] lg:text-[16px]
+              text-[5px] sm:text-[8px] md:text-[14px] lg:text-[16px]
             "
           >
             {stat.subtext}

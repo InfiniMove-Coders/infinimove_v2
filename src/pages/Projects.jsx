@@ -16,7 +16,7 @@ const Projects = () => {
       <section
         className="
             relative bg-black flex items-center justify-center overflow-hidden rounded-[32px]
-            w-full max-w-[1440px] h-[200px] lg:h-[500px] mx-auto mt-[78px]
+            w-full max-w-[1440px] h-[200px] md:h-[460px] lg:h-[500px] mx-auto mt-[78px]
             px-4 sm:px-8 md:px-16 lg:px-[150px]
           "
       >

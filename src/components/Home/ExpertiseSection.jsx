@@ -62,7 +62,7 @@ const ExpertiseSection = () => {
           className="
             grid grid-cols-4
             gap-2 sm:gap-3 md:gap-4 lg:gap-8
-            mb-8 sm:mb-10 md:mb-12 lg:mb-20
+            mb-8 sm:mb-10 md:mb-17 lg:mb-20
           "
         >
           {expertiseData.map((item, index) => (
