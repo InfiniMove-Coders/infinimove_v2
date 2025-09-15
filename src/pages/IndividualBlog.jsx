@@ -1,268 +1,191 @@
 import React from 'react';
 import Navbar from '../components/Navbar/Navbar';
 import Footer from '../components/Footer/Footer';
+
+const blogData = {
+  title: 'AI AGENT TESTING NEEDS TO BE AGENTIC TOO',
+  author: 'Jenny',
+  date: '26 Apr 25',
+  readTime: '5 mins read',
+  heroImage: '/images/FP1.png',
+  avatar: '/images/Testimony.png',
+  toc: ['Intro', 'Main', 'Pros And Cons', 'Conclusion'],
+  content: [
+    `As AI agents become the primary interface between enterprises and customers, ensuring their reliability becomes crucial. Organizations need confidence that their AI will perform consistently across every interaction, not just the expected scenarios they anticipated and planned for.`,
+    `After helping customers deploy hundreds of enterprise AI agents this year, we’ve discovered that traditional testing methods – designed for predictable, deterministic software – simply aren’t built for AI’s probabilistic nature. A single change can ripple through thousands of conversational scenarios in ways manual testing will never catch. Today’s AI agents require testing infrastructure that can systematically validate behaviors across thousands of potential conversation paths.`,
+    `At Yellow.ai, we’ve built Agentic AI-powered Automated Testing specifically for this new reality, to ensure your AI agents perform reliably across every scenario your customers might create.`,
+    `By Jenny | Marketing Specialist`,
+  ],
+};
+
 const blogPosts = [
-    {
-      tags: ['B2C', 'E Commerce'],
-      title: 'AI-Powered Customer Service Revolution',
-      description: 'Implemented conversational AI that reduced response time by 80% and increased customer satisfaction to 95%.',
-      author: 'Jenny',
-      date: '26 Apr 25',
-      avatar: '/images/Testimony.png',
-      image: '/images/FP1.png',
-    },
-    {
-      tags: ['B2C', 'E Commerce'],
-      title: 'AI-Powered Customer Service Revolution',
-      description: 'Implemented conversational AI that reduced response time by 80% and increased customer satisfaction to 95%.',
-      author: 'Jenny',
-      date: '26 Apr 25',
-      avatar: '/images/Testimony.png',
-      image: '/images/FP1.png',
-    },]
-const IndividualBlog = () => {
-    return (
-        <>
-            <div className="bg-black min-h-screen" style={{ overflowX: 'hidden' }}>
-                {/* Fixed Navbar at top */}
-                <div className="fixed top-0 left-0 right-0 z-50">
-                    <Navbar />
-                </div>
-                <div
-                    style={{
+  {
+    tags: ['B2C', 'E Commerce'],
+    title: 'AI-Powered Customer Service Revolution',
+    description:
+      'Implemented conversational AI that reduced response time by 80% and increased customer satisfaction to 95%.',
+    author: 'Jenny',
+    date: '26 Apr 25',
+    avatar: '/images/Testimony.png',
+    image: '/images/FP1.png',
+  },
+  {
+    tags: ['B2C', 'E Commerce'],
+    title: 'AI-Powered Customer Service Revolution',
+    description:
+      'Implemented conversational AI that reduced response time by 80% and increased customer satisfaction to 95%.',
+    author: 'Jenny',
+    date: '26 Apr 25',
+    avatar: '/images/Testimony.png',
+    image: '/images/FP1.png',
+  },
+];
 
-                        marginTop: '20px',
-                        width: '100%',
-                        color: "#fff",
-                        fontFamily: 'Urbanist',
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        padding: "48px 0",
+const IndividualBlog = ({ onCardClick }) => {
+  return (
+    <div className="bg-black min-h-screen overflow-x-hidden">
+      {/* Navbar */}
+      <div className="fixed top-0 left-0 right-0 z-50">
+        <Navbar />
+      </div>
 
-                    }}
-                >
-                    <div
-                        style={{
-                            maxWidth: "900px",
-                            width: "100%",
-                            background: "black",
-                            borderRadius: "20px",
-                            paddingTop: "48px",
-                            display: "flex",
-                            flexDirection: "row",
-                            gap: "32px",
-                        }}
-                    >
-                        {/* Main Content */}
-                        <main style={{ flex: 1 }}>
-                            {/* Blog Meta */}
-                            <span style={{ color: "#0464DA", fontSize: "24px", marginBottom: "10px", marginRight: '5px' }}>
-                                Blog
-                            </span>
-                            <span style={{ color: "#FFFFFF", fontSize: "24px", marginBottom: "10px" }}>
-                                | 5 mins read
-                            </span>
+      {/* Blog Container */}
+      <div className="w-full flex items-center justify-center px-4 sm:px-6 md:px-10 lg:px-0 md:mt-[40px] lg:mt-[60px]">
+        <div className="max-w-[900px] w-full bg-black rounded-[20px] pt-12 flex flex-col gap-4">
+          {/* Blog Meta */}
+          <div className="flex flex-wrap items-center gap-2 ">
+            <span className="text-[#0464DA] text-[8px] sm:text-[1px] md:text-[14px] lg:text-[16px]">
+              Blog
+            </span>
+            <span className="text-white text-[8px] sm:text-[20px] md:text-[14px] lg:text-[16px]">
+              | {blogData.readTime}
+            </span>
+          </div>
 
-                            {/* Title */}
-                            <h1
-                                style={{
-                                    width: '100%',
-                                    fontSize: "48px",
-                                    fontWeight: 900,
-                                    marginTop: '20px',
-                                    lineHeight: 1.17,
-                                    letterSpacing: "-2px",
-                                    color: "#fff",
-                                }}
-                            >
-                                AI AGENT TESTING NEEDS TO BE AGENTIC TOO
-                            </h1>
+          {/* Title */}
+          <h1 className="text-white font-black leading-tight tracking-tight text-[14px] sm:text-[14px] md:text-[24px] lg:text-[36px]">
+            {blogData.title}
+          </h1>
 
-                            {/* Author and date */}
-                            <div
-                                style={{
-                                    fontSize: "28px",
-                                    color: "#dddddd",
-                                    marginBottom: "26px",
-                                    marginTop: "20px",
-                                    alignItems: "center",
-                                    gap: "6px",
-                                }}
-
-                            >
-                                <div style={{
-                                    width: '100%',
-                                    display: 'flex',
-                                    justifyContent: 'space-between'
-                                }}>
-                                    <div
-                                        style={{
-                                            display: 'flex',
-                                            alignItems: 'center',
-                                        }}>
-                                        <span><img src="/images/Testimony.png" alt="" style={{
-                                            width: '40px',
-                                            height: '40px',
-                                            marginRight: '5px'
-                                        }} /></span>
-                                        <span>By Jenny</span>
-                                        <span>|</span>
-                                        <span>26 Apr 25</span>
-                                    </div>
-                                    <div>
-                                        <span style={{ color: "#0464DA", fontSize: "36px", marginLeft: "14px", letterSpacing: "9px" }}>
-                                            ●●●
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* Hero Image */}
-                            <img
-                                src="/images/FP1.png"
-                                alt="Meeting blog visual"
-                                style={{
-                                    width: "100%",
-                                    height: "513px",
-                                    borderRadius: "16px",
-                                    marginBottom: "30px",
-                                    objectFit: "cover",
-                                    boxShadow: "0 2px 14px 2px rgba(0,0,0,0.09)",
-                                }}
-                            />
-                            <div
-                                style={{
-                                    maxWidth: "900px",
-                                    width: "100%",
-                                    background: "radial-gradient(48.66% 48.66% at 50% 99.97%, #00064B 0%, rgba(0, 0, 0, 0) 100%), rgba(24, 26, 34, 0)",
-                                    borderRadius: "20px",
-                                    boxShadow: "0 8px 36px 4px #171B3838",
-                                    padding: "48px",
-                                    display: "flex",
-                                    flexDirection: "row",
-                                    gap: "32px",
-                                    alignItems: "flex-start",
-                                }}
-
-                            >
-
-                                {/* Sidebar */}
-                                <aside
-                                    style={{
-                                        Width: "271px",
-                                        background: "black",
-                                        borderRadius: "14px",
-                                        fontSize: "15px",
-                                        color: "#fff",
-                                        height: "fit-content",
-                                        marginRight: '50px'
-                                    }}
-                                >
-                                    <strong style={{ marginBottom: "18px", display: "block", fontSize: "27px", width: '221px' }}>
-                                        Table of Contents
-                                    </strong>
-                                    <div style={{ lineHeight: "2.1" }}>
-                                        <div>Intro</div>
-                                        <div>Main</div>
-                                        <div>Pros And Cons</div>
-                                        <div>Conclusion</div>
-                                    </div>
-                                </aside>
-
-                                {/* Blog Text */}
-                                <div
-                                    style={{
-                                        width: '100%',
-                                        color: "#fff",
-                                        fontSize: "20px",
-                                        fontWeight: '400',
-                                        lineHeight: "1.7",
-                                        textAlign: "left",
-                                    }}
-                                >
-                                    As AI agents become the primary interface between enterprises and customers, ensuring their reliability becomes crucial. Organizations need confidence that their AI will perform consistently across every interaction, not just the expected scenarios they anticipated and planned for.
-                                    <br />
-                                    <br />
-                                    After helping customers deploy hundreds of enterprise AI agents this year, we’ve discovered that traditional testing methods – designed for predictable, deterministic software – simply aren’t built for AI’s probabilistic nature. A single change can ripple through thousands of conversational scenarios in ways manual testing will never catch. Today’s AI agents require testing infrastructure that can systematically validate behaviors across thousands of potential conversation paths.
-                                    <br />
-                                    <br />
-                                    At Yellow.ai, we’ve built Agentic AI-powered Automated Testing specifically for this new reality, to ensure your AI agents perform reliably across every scenario your customers might create.
-                                    <br />
-                                    <br />
-                                    By Jenny | Marketing Specialist
-                                </div>
-                            </div>
-                        </main>
-                    </div>
-                </div>
-                <section
-                    className="flex flex-col items-center w-full max-w-[1440px] mx-auto pt-12 pb-10"
-                    style={{ background: 'black',}}
-                >
-                    {/* Blog Cards Grid */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-x-12 gap-y-8 w-full px-4">
-                        {blogPosts.map((post, idx) => (
-                            <div
-                                key={idx}
-                                className="rounded-[20px] p-[1.5px] mx-auto"
-                                style={{
-                                    padding: '0.81px',
-                                    background:
-                                        'linear-gradient(0deg, #FFFFFF 0%, #0038A0 41%, #8083A5 73%, #FFFFFF 100%)',
-                                    boxSizing: 'border-box',
-                                }}
-                            >
-                                <div className="rounded-[20px] bg-[#000814] flex flex-row items-center px-8 py-6 shadow-md min-h-[293px] w-full max-w-[645px]">
-                                    {/* Left content */}
-                                    <div className="flex flex-col flex-1">
-                                        {/* Tags */}
-                                        <div className="flex gap-2 mb-3">
-                                            {post.tags.map((tag, i) => (
-                                                <div
-                                                    key={i}
-                                                    className="bg-[#000814] border border-[#FFE2E2] text-[#F0F0F0] text-[14px] font-extrabold px-3 py-1 rounded-[22px] font-[Urbanist] flex items-center"
-                                                >
-                                                    {tag}
-                                                </div>
-                                            ))}
-                                        </div>
-                                        {/* Title */}
-                                        <h4 className="font-bold text-[28px] text-[#FFFFFF] leading-[34px] mb-2 font-[Urbanist]">
-                                            {post.title}
-                                        </h4>
-                                        {/* Description */}
-                                        <p className="text-[14px] text-[#ABABAB] leading-[17px] mb-6 font-[Urbanist]">
-                                            {post.description}
-                                        </p>
-                                        {/* Author/Date */}
-                                        <div className="flex items-center gap-2 mt-auto">
-                                            <img
-                                                src={post.avatar}
-                                                alt="Author"
-                                                className="w-[18px] h-[18px] rounded-full object-cover"
-                                            />
-                                            <span className="text-[14px] text-[#FFF] font-normal font-[Urbanist]">{`By ${post.author} | ${post.date}`}</span>
-                                        </div>
-                                    </div>
-                                    {/* Right image */}
-                                    <div className="ml-7 flex-shrink-0 flex items-center justify-center">
-                                        <img
-                                            src={post.image}
-                                            alt="blog"
-                                            className="rounded-[12px] w-[280.5px] h-[172px] object-cover"
-                                            style={{ minWidth: '280.5px', minHeight: '172px' }}
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </section>
-                <Footer />
+          {/* Author & Date */}
+          <div className="text-[#dddddd] text-[12px] sm:text-[18px] md:text-[10px] lg:text-[12px]">
+            <div className="w-full flex sm:flex-row sm:items-center justify-between gap-3">
+              <div className="flex items-center gap-2">
+                <img
+                  src={blogData.avatar}
+                  alt="Author"
+                  className="lg:w-[16px] lg:h-[16px] w-[12px] h-[12px] sm:w-[12px] sm:h-[12px] md:w-[25px] md:h-[25px] rounded-full"
+                />
+                <span>By {blogData.author}</span>
+                <span>|</span>
+                <span>{blogData.date}</span>
+              </div>
+              <div className="text-[#0464DA] text-[12px] sm:text-[12px] md:text-[25px] lg:text-[16px] tracking-[6px] lg:tracking-[9px]">
+                ●●●
+              </div>
             </div>
-        </>
-    );
+          </div>
+
+          {/* Hero Image */}
+          <img
+            src={blogData.heroImage}
+            alt="Blog visual"
+            className="w-full rounded-[16px] object-cover mb-4 shadow-md h-[180px] sm:h-[250px] md:h-[350px] lg:h-[400px]"
+          />
+
+          {/* Blog Body + TOC */}
+          <div className="w-full bg-[radial-gradient(48.66%_48.66%_at_50%_99.97%,#00064B_0%,rgba(0,0,0,0)_100%),rgba(24,26,34,0)] rounded-[20px] shadow-[0_8px_36px_4px_#171B3838] p-4 sm:p-6 md:p-8 lg:p-12 flex flex-row gap-6 lg:gap-8">
+            {/* Sidebar TOC */}
+            <aside className="w-full sm:w-[100px] md:w-[220px] lg:w-[271px] bg-black rounded-[14px] text-white text-[14px] sm:text-[15px] mb-4 md:mb-0">
+              <strong className="block mb-1 text-[7px] sm:text-[10px] md:text-[16px] lg:text-[20px]">
+                Table of Contents
+              </strong>
+              <div className="leading-[2] text-[7px] sm:text-[10px] md:text-[16px] lg:text-[20px]">
+                {blogData.toc.map((item, idx) => (
+                  <div key={idx}>{item}</div>
+                ))}
+              </div>
+            </aside>
+
+            {/* Blog Content */}
+            <div className=" text-white text-[7px] sm:text-[10px] md:text-[14px] lg:text-[16px] leading-relaxed">
+              {blogData.content.map((para, idx) => (
+                <p key={idx} className="mb-4">
+                  {para}
+                </p>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Blog Cards */}
+      <section className="w-full max-w-[1440px] mx-auto bg-black">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 gap-x-6 gap-y-6 w-full px-3 sm:px-4">
+          {blogPosts.map((post, idx) => (
+            <div
+              key={idx}
+              className="rounded-[16px] p-[1.5px] mx-auto w-full"
+              style={{
+                padding: '0.81px',
+                background:
+                  'linear-gradient(0deg, #FFFFFF 0%, #0038A0 41%, #8083A5 73%, #FFFFFF 100%)',
+                boxSizing: 'border-box',
+                cursor: onCardClick ? 'pointer' : 'default',
+              }}
+              onClick={() => {
+                if (onCardClick) onCardClick(idx);
+              }}
+            >
+              <div className="rounded-[16px] bg-[#000814] flex flex-row items-center sm:items-stretch px-2 sm:px-5 py-4 sm:py-5 shadow-md min-h-[100px] sm:min-h-[260px] md:min-h-[190px] w-full">
+                {/* Left Content */}
+                <div className="flex flex-col flex-1">
+                  {/* Tags */}
+                  <div className="flex mb-2 sm:mb-3 flex-wrap gap-1 lg:gap-2">
+                    {post.tags.map((tag, i) => (
+                      <div
+                        key={i}
+                        className="bg-[#000814] min-w-[12px] md:h-[15px] lg:h-[20px] h-[7px] border border-[#FFE2E2] text-[#F0F0F0] text-[3px] sm:text-[12px] md:text-[10px] font-extrabold px-1 py-[0.5px] rounded-xl font-[Urbanist]"
+                      >
+                        {tag}
+                      </div>
+                    ))}
+                  </div>
+                  {/* Title */}
+                  <h4 className="font-bold text-[7px] sm:text-[18px] md:text-[10px] lg:text-[30px] text-[#FFFFFF] leading-snug mb-1 font-[Urbanist]">
+                    {post.title}
+                  </h4>
+                  {/* Description */}
+                  <p className="text-[4px] sm:text-[13px] md:text-[8px] lg:text-[15px] text-[#ABABAB] leading-snug mb-2 font-[Urbanist]">
+                    {post.description}
+                  </p>
+                  {/* Author/Date */}
+                  <div className="flex items-center gap-1 mt-auto">
+                    <img
+                      src={post.avatar}
+                      alt="Author"
+                      className="w-[7px] h-[7px] sm:w-[16px] sm:h-[16px] md:w-[18px] md:h-[18px] lg:h-[20px] lg:w-[20px] rounded-full object-cover"
+                    />
+                    <span className="text-[4px] sm:text-[13px] md:text-[10px] text-[#FFF] font-normal font-[Urbanist]">{`By ${post.author} | ${post.date}`}</span>
+                  </div>
+                </div>
+                {/* Right Image */}
+                <div className="sm:mt-0 sm:ml-4 flex-shrink-0 flex items-center justify-center">
+                  <img
+                    src={post.image}
+                    alt="blog"
+                    className="rounded-md w-[70px] h-[50px] sm:w-[200px] sm:h-[130px] md:w-[180px] md:h-[110px] object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <Footer />
+    </div>
+  );
 };
 
 export default IndividualBlog;

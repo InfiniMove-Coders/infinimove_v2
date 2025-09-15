@@ -17,7 +17,7 @@ const StatCard = ({ value, label }) => {
       {/* Statistics value */}
       <div
         className="
-          text-[8px] sm:text-[9px] md:text-[10px] lg:text-5xl
+          text-[8px] sm:text-[9px] md:text-[15px] lg:text-5xl
           font-bold text-white mb-0.5
           font-urbanist group-hover:text-blue-400
           transition-colors duration-300
@@ -29,7 +29,7 @@ const StatCard = ({ value, label }) => {
       {/* Statistics label */}
       <div
         className="
-          text-[5px] sm:text-[6px] md:text-[7px] lg:text-base
+          text-[5px] sm:text-[6px] md:text-[10px] lg:text-base
           text-gray-300 font-roboto
         "
       >

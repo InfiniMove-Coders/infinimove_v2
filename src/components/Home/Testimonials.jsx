@@ -3,31 +3,17 @@ import { FaStar } from "react-icons/fa"; // ⭐ star
 
 const testimonials = [
   {
-    name: "Viezh Robert",
-    location: "Warsaw, Poland",
+    name: "Ram Mohan",
+    location: "Kadapa , AP",
     rating: 4.5,
-    text: "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best.",
+    text: "The team did an outstanding job with our college website. It’s intuitive, visually appealing, and has significantly improved our user engagement.",
     img: "/images/TC1.png",
   },
   {
-    name: "Yessica Christy",
-    location: "Shanxi, China",
+    name: "Prakash",
+    location: "Chittoor , AP",
     rating: 4.7,
-    text: "I like it because I like to travel far and still can connect with high speed.",
-    img: "/images/TC1.png",
-  },
-  {
-    name: "Kim Young Jou",
-    location: "Seoul, South Korea",
-    rating: 4.9,
-    text: "This is very unusual for my business that currently requires a virtual private network that has high security.",
-    img: "/images/TC1.png",
-  },
-  {
-    name: "Viezh Robert",
-    location: "Warsaw, Poland",
-    rating: 4.5,
-    text: "LaslesVPN always the best. Super fast connection and reliable.",
+    text: "Our e-commerce website was delivered with exceptional quality and efficiency. The user experience is top-notch, and we’ve seen an increase in customer satisfaction.",
     img: "/images/TC1.png",
   },
 ];
@@ -85,7 +71,7 @@ export const TestimonialCarousel = () => {
   }, [current]);
 
   return (
-    <section className="relative w-full bg-[#000328] h-[400px] lg:h-[600px] flex flex-col items-center justify-center">
+    <section className="relative w-full bg-[#000328] h-[400px] md:h-[550px] lg:h-[600px] flex flex-col items-center justify-center">
       {/* Banner */}
       <div className="flex flex-col items-center justify-center max-w-2xl mx-auto px-4">
         <h2
@@ -108,8 +94,7 @@ export const TestimonialCarousel = () => {
             w-full max-w-[529px]
           "
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore.
+          Here's what Our clients say!
         </p>
       </div>
 
