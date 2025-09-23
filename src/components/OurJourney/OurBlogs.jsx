@@ -52,7 +52,7 @@ const OurBlogs = () => {
     {
       id: 3,
       tags: ['Startup', 'India'],
-      title: 'Our Startup is Officially Registered in India',
+      title: 'Officially Registered in STARTUP INDIA',
       description:
         'Proudly registered in India, our startup operates with compliance and credibility, enabling us to innovate, collaborate, and scale with trust and recognition.',
       author: 'Founding Team',

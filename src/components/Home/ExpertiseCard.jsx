@@ -18,10 +18,6 @@ const ExpertiseCard = ({ title, description,}) => {
       <p className="text-gray-300 text-[3.5px] sm:text-[10px] md:text-[9px] lg:text-[13px] leading-relaxed font-roboto text-left self-start mb-2 lg:mb-4">
         {description}
       </p>
-
-      <p className="text-gray-300 text-[3.5px] sm:text-[10px] md:text-[8px] lg:text-[13px] leading-relaxed font-roboto text-left items-left self-start ">
-        Learn More
-      </p>
     </div>
   );
 };
