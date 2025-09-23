@@ -49,7 +49,7 @@ const OurJourney = () => {
             {/* Buttons Row */}
             {/* Buttons */}
             <div className="flex flex-row gap-2 sm:gap-3 md:gap-5 lg:gap-6 justify-center">
-              <button
+              <button onClick={() => navigate("/about#contact")}
                 className="
                 px-3 sm:px-4 md:px-6 
                 py-1.5 sm:py-2 md:py-3 
@@ -62,7 +62,7 @@ const OurJourney = () => {
                 Schedule a call Today
               </button>
 
-              <button
+              <button onClick={() => navigate("/projects")}
                 className="
                 px-3 sm:px-4 md:px-6 
                 py-1.5 sm:py-2 md:py-3 

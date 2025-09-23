@@ -14,7 +14,7 @@ const ProductBadge = () => {
         <div
           className="
             flex items-center justify-center gap-1
-            w-[359px] h-[17px]
+            w-full h-[17px]
             max-md:w-[280px] max-md:h-[14px]
             max-sm:w-[200px] max-sm:h-[12px]
           "

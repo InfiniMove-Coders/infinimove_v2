@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation ,useNavigate } from "react-router-dom";
 import routes from "../../pages/Routes/Routes";
 
 const Navbar = () => {
@@ -16,6 +16,8 @@ const Navbar = () => {
       setActiveTab(currentRoute.name);
     }
   }, [location.pathname, activeTab]);
+
+  const navigate=useNavigate();
 
   const getNavLinkClasses = (isActive, width) =>
     `font-[Plus Jakarta Sans] font-semibold cursor-pointer relative flex items-center justify-center
@@ -36,7 +38,7 @@ const Navbar = () => {
           "
         >
           {/* Logo */}
-          <div className="flex items-center gap-1 sm:gap-1.5 md:gap-2">
+          <div className="flex items-center gap-1 sm:gap-1.5 md:gap-2" onClick={()=>navigate("/")}>
             <img
               src="/Vector.svg"
               alt="Logo"

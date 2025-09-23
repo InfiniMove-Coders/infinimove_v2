@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="480" viewBox="0 0 600 480" role="img" aria-label="AI Chatbot Illustration">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" x2="1">
+      <stop offset="0%" stop-color="#001428"/>
+      <stop offset="100%" stop-color="#003B82"/>
+    </linearGradient>
+    <style>
+      .title { font: 700 28px 'Helvetica Neue', Arial, sans-serif; fill: #FFD24A; }
+      .subtitle { font: 600 18px 'Helvetica Neue', Arial, sans-serif; fill: #F5F7FA; }
+      .stat { font: 700 16px 'Helvetica Neue', Arial, sans-serif; fill: #FFD24A; }
+      .muted { font: 400 14px 'Helvetica Neue', Arial, sans-serif; fill: #C3D1E0; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="480" rx="20" fill="url(#bgGrad)"/>
+
+  <!-- Chatbot head -->
+  <g transform="translate(250,120)">
+    <rect x="-70" y="0" width="140" height="140" rx="28" fill="#0C2F66" stroke="#4EA8FF" stroke-width="4"/>
+    <!-- Eyes -->
+    <circle cx="-30" cy="50" r="10" fill="#FFD24A"/>
+    <circle cx="30" cy="50" r="10" fill="#FFD24A"/>
+    <!-- Smile -->
+    <path d="M-30,90 Q0,120 30,90" stroke="#FFD24A" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <!-- Antenna -->
+    <line x1="0" y1="-20" x2="0" y2="0" stroke="#FFD24A" stroke-width="4"/>
+    <circle cx="0" cy="-30" r="8" fill="#FFD24A"/>
+  </g>
+
+  <!-- Speech bubbles -->
+  <g transform="translate(110,280)">
+    <rect x="0" y="0" width="150" height="50" rx="10" fill="#FFFFFF20" stroke="#FFD24A" stroke-width="1.5"/>
+    <text x="75" y="30" text-anchor="middle" font="600 14px Arial" fill="#FFD24A">How can I help?</text>
+  </g>
+  <g transform="translate(340,280)">
+    <rect x="0" y="0" width="150" height="50" rx="10" fill="#FFFFFF20" stroke="#4EA8FF" stroke-width="1.5"/>
+    <text x="75" y="30" text-anchor="middle" font="600 14px Arial" fill="#4EA8FF">Track my order</text>
+  </g>
+
+  <!-- Title + Stats -->
+  <g transform="translate(40,60)">
+    <text class="title">AI Chatbot</text>
+    <text class="subtitle" y="36">Faster, smarter customer service</text>
+
+    <g transform="translate(0,100)">
+      <text class="stat">80% faster response time</text>
+      <text class="muted" y="24">Improved customer experience</text>
+    </g>
+    <g transform="translate(0,160)">
+      <text class="stat">95% satisfaction rate</text>
+      <text class="muted" y="24">Automated support at scale</text>
+    </g>
+    <g transform="translate(0,220)">
+      <text class="stat">60% cost reduction</text>
+      <text class="muted" y="24">Efficient resource allocation</text>
+    </g>
+  </g>
+</svg>

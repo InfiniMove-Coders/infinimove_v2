@@ -8,8 +8,8 @@ const stats = [
 ];
 
 const VisionStats = () => (
-  <section className="w-full  h-[200px] md:h-auto lg:h-auto bg-black flex flex-col items-center lg:py-12 px-4">
-    {/* Title */} 
+  <section className="w-full h-[200px] md:h-auto lg:h-auto bg-black flex flex-col items-center lg:py-12 px-4">
+    {/* Title */}
     <h2
       className="
         font-urbanist font-bold text-[#F0F0F0] text-center
@@ -45,10 +45,14 @@ const VisionStats = () => (
           className="
             flex flex-col items-center justify-center 
             bg-[#060606] rounded-md shadow-[0_0_0_1px_#2359d9]
-            transition-all mx-auto
+            transition-all duration-300 ease-in-out mx-auto
 
             w-[70px] h-[50px] sm:w-[90px] sm:h-[100px] md:w-[160px] md:h-[120px]
-            lg:w-[278px] lg:h-[163px] 
+            lg:w-[278px] lg:h-[163px]
+
+            hover:h-[80px] sm:hover:h-[120px] md:hover:h-[150px] lg:hover:h-[200px]
+            hover:shadow-none hover:border-[2px] hover:border-transparent
+            hover:bg-[#0a0a0a] hover:border-gradient
           "
         >
           {/* Icon */}
@@ -84,6 +88,19 @@ const VisionStats = () => (
         </div>
       ))}
     </div>
+
+    {/* Gradient border helper class */}
+    <style>
+      {`
+        .hover\\:border-gradient:hover {
+          border: 1px solid transparent;
+          background-image: linear-gradient(#060606, #060606),
+            linear-gradient(to right, #0038A0, #8083A5, #ffffff,#0038A0);
+          background-origin: border-box;
+          background-clip: content-box, border-box;
+        }
+      `}
+    </style>
   </section>
 );
 

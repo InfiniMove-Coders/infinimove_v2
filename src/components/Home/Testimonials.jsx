@@ -10,12 +10,26 @@ const testimonials = [
     img: "/images/TC1.png",
   },
   {
-    name: "Prakash",
-    location: "Chittoor , AP",
+  name: "Unknown",
+  location: "Hyderabad,TS",
+  rating: 4.6,
+  text: "The designs delivered were visually stunning and user-friendly. Navigation feels effortless, and customers appreciate the refreshed look.",
+  img: "/images/TC1.png",
+},
+  {
+    name: "Hasini Enterprises",
+    location: "Bangalore,KA",
     rating: 4.7,
-    text: "Our e-commerce website was delivered with exceptional quality and efficiency. The user experience is top-notch, and we’ve seen an increase in customer satisfaction.",
+    text: "The e-commerce website was delivered with exceptional quality and efficiency. It offers a top-notch user experience, leading to increased customer satisfaction.",
     img: "/images/TC1.png",
   },
+  {
+  name: "Unknown",
+  location: "Hyderabad, TS",
+  rating: 4.9,
+  text: "The AI-powered chatbot completely changed our customer service. Queries are resolved instantly, and users feel supported at all times.",
+  img: "/images/TC1.png",
+}
 ];
 
 export const TestimonialCarousel = () => {

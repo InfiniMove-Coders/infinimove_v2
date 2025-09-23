@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar/Navbar';
 import AnimatedVideoBackground from '../components/Background/AnimatedVideoBackground';
 import ProductBadge from '../components/About/ProductBadge';
@@ -10,7 +10,7 @@ import Footer from '../components/Footer/Footer';
 
 const About = () => {
   const { hash } = useLocation();
-
+  const navigate = useNavigate();
   useEffect(() => {
     if (hash) {
       const element = document.getElementById(hash.substring(1));
@@ -77,7 +77,7 @@ const About = () => {
             {/* Buttons Row */}
             {/* Buttons */}
             <div className="flex flex-row gap-2 sm:gap-3 md:gap-5 lg:gap-6 justify-center">
-              <button
+              <button onClick={() => navigate("/about#contact")}
                 className="
                 px-3 sm:px-4 md:px-6 
                 py-1.5 sm:py-2 md:py-3 
@@ -90,7 +90,7 @@ const About = () => {
                 Schedule a call Today
               </button>
 
-              <button
+              <button onClick={() => navigate("/projects")}
                 className="
                 px-3 sm:px-4 md:px-6 
                 py-1.5 sm:py-2 md:py-3 
@@ -103,9 +103,29 @@ const About = () => {
                 Explore Our Work
               </button>
             </div>
-
           </div>
         </section>
+        <div className="flex items-center justify-center">
+          <p
+            className="
+            font-urbanist 
+            font-bold 
+            text-center 
+            text-[#ABABAB] 
+            mt-3 mb-6 
+            text-[8px] 
+            sm:text-[12px] 
+            md:text-[14px] 
+            lg:text-[24px] 
+            lg:w-[1000px]
+            md:w-[800px]
+            w-[400px]
+    "
+          >
+            Infinimove Technologies Pvt Ltd is a technology company based in India, providing web application development, custom software solutions, and design services. The company focuses on delivering innovative and scalable digital products tailored to meet the unique needs of businesses. With a commitment to quality and customer satisfaction, Infinimove helps organizations enhance their digital presence and streamline operations through cutting-edge technology.
+          </p>
+        </div>
+
 
         <div className="w-full bottom-0 flex flex-col pt-20 space-y-16">
           <div className='flex-shrink-0'>
@@ -115,7 +135,7 @@ const About = () => {
             <GuidingPrinciples />
           </div>
           {/* Contact Form */}
-          <div id="contact" className="flex-shrink-0">
+          <div className="flex-shrink-0">
             {/* Heading */}
             <h2 className="font-urbanist font-extrabold text-[#F0F0F0] text-center
                      text-[16px] sm:text-[20px] md:text-[28px] lg:text-[48px]">
@@ -128,11 +148,13 @@ const About = () => {
               To be a recognized leader in the digital transformation of industries, defined by our <br />
               unwavering commitment to excellence and the success of our clients.
             </p>
-            <AboutForm />
+            <div id="contact" className="flex-shrink-0">
+              <AboutForm />
+            </div>
           </div>
-        <div className='flex-shrink-0'>
-          <Footer />
-        </div>
+          <div className='flex-shrink-0'>
+            <Footer />
+          </div>
         </div>
       </div>
     </>
