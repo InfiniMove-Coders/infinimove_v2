@@ -5,8 +5,10 @@ import AnimatedVideoBackground from '../components/Background/AnimatedVideoBackg
 import ProductBadge from '../components/Projects/ProductBadge';
 import FeaturedProjects from '../components/Projects/FeaturedProjects';
 import Footer from '../components/Footer/Footer';
+import { useNavigate } from 'react-router-dom';
 
 const Projects = () => {
+  const navigate = useNavigate();
   return (
     <div className="bg-black" style={{ overflowX: 'hidden' }}>
       <div className="fixed top-0 left-0 right-0 z-50">
@@ -54,7 +56,7 @@ const Projects = () => {
           {/* Buttons Row */}
           {/* Buttons */}
           <div className="flex flex-row gap-2 sm:gap-3 md:gap-5 lg:gap-6 justify-center">
-            <button
+            <button onClick={() => navigate("/about#contact")}
               className="
                 px-3 sm:px-4 md:px-6 
                 py-1.5 sm:py-2 md:py-3 
@@ -67,7 +69,7 @@ const Projects = () => {
               Schedule a call Today
             </button>
 
-            <button
+            <button onClick={() => navigate("/projects")}
               className="
                 px-3 sm:px-4 md:px-6 
                 py-1.5 sm:py-2 md:py-3 

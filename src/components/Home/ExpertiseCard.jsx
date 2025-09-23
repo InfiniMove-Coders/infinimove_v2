@@ -10,12 +10,12 @@ const ExpertiseCard = ({ title, description,}) => {
                     h-19 sm:h-25 md:h-37 lg:h-52">
       
       {/* Title */}
-      <h3 className="text-white font-bold text-[9px] sm:text-[12px] md:text-[13px] lg:text-[33px] px-4 mb-1 sm:mb-1 md:mb-1 font-urbanist text-center">
+      <h3 className="text-white font-bold text-[9px] sm:text-[12px] md:text-[20px] lg:text-[33px] px-4 mb-1 sm:mb-1 md:mb-2 font-urbanist text-center">
         {title}
       </h3>
       
       {/* Description */}
-      <p className="text-gray-300 text-[3.5px] sm:text-[10px] md:text-[8px] lg:text-[13px] leading-relaxed font-roboto text-left self-start mb-2 lg:mb-4">
+      <p className="text-gray-300 text-[3.5px] sm:text-[10px] md:text-[9px] lg:text-[13px] leading-relaxed font-roboto text-left self-start mb-2 lg:mb-4">
         {description}
       </p>
 

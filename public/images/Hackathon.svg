@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-label="Hackathon illustration">
+  <title>We Conduct Hackathons</title>
+  <desc>Colorful illustration showing a hackathon: stage, people coding, idea lightbulb, trophy, and confetti.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0f1724"/>
+      <stop offset="100%" stop-color="#071033"/>
+    </linearGradient>
+
+    <linearGradient id="panelGrad" x1="0" x2="1">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+
+    <linearGradient id="cardA" x1="0" x2="1">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+
+    <radialGradient id="spot" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="12" stdDeviation="20" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+
+    <style>
+      .title { font: 700 36px/1 'Inter', 'Helvetica Neue', Arial, sans-serif; fill: #ffffff; }
+      .subtitle { font: 600 18px/1 'Inter', Arial, sans-serif; fill: #cfe8ff; opacity: 0.9; }
+      .small { font: 500 14px/1 'Inter', Arial, sans-serif; fill: #e6f3ff; opacity: 0.85; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="600" fill="url(#bg)"/>
+  <rect x="60" y="40" width="1080" height="520" rx="20" fill="rgba(255,255,255,0.02)"/>
+
+  <!-- Top-left title -->
+  <g transform="translate(100,80)">
+    <text class="title">We Conduct Hackathons</text>
+    <text class="subtitle" y="46">Bringing innovators, developers, and entrepreneurs together to build solutions fast.</text>
+  </g>
+
+  <!-- Stage / podium -->
+  <g transform="translate(140,180)">
+    <rect x="0" y="30" width="420" height="220" rx="16" fill="url(#panelGrad)" filter="url(#softShadow)"/>
+    <rect x="18" y="48" width="384" height="56" rx="10" fill="rgba(255,255,255,0.06)"/>
+    <text x="36" y="86" class="small">Live Demos • Team Pitches • Mentorship</text>
+
+    <!-- lightbulb idea -->
+    <g transform="translate(340,28)">
+      <ellipse cx="0" cy="0" rx="36" ry="44" fill="#ffef9f" stroke="#ffd34d" stroke-width="3"/>
+      <rect x="-14" y="34" width="28" height="12" rx="3" fill="#ffd34d"/>
+      <rect x="-8" y="46" width="16" height="8" rx="2" fill="#f5c400"/>
+      <path d="M-10 10 L-20 2 M10 10 L20 2" stroke="#ffd34d" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="-38" cy="-22" r="6" fill="#ffd34d" opacity="0.9"/>
+      <circle cx="34" cy="-28" r="5" fill="#ffd34d" opacity="0.85"/>
+    </g>
+
+    <!-- trophy on stage -->
+    <g transform="translate(40,48)">
+      <rect x="0" y="120" width="70" height="26" rx="6" fill="#f8b500"/>
+      <rect x="22" y="90" width="26" height="40" rx="4" fill="#ffd86b"/>
+      <circle cx="35" cy="70" r="28" fill="#ffd86b" stroke="#f8b500" stroke-width="4"/>
+      <text x="35" y="76" text-anchor="middle" font="700 18px Inter" fill="#7a4200">1</text>
+    </g>
+  </g>
+
+  <!-- Teams coding: three cards/laptops -->
+  <g transform="translate(640,210)">
+    <!-- Card 1 -->
+    <g transform="translate(0,0)">
+      <rect x="0" y="0" width="160" height="120" rx="12" fill="url(#cardA)" filter="url(#softShadow)"/>
+      <rect x="12" y="14" width="136" height="20" rx="6" fill="rgba(255,255,255,0.12)"/>
+      <rect x="12" y="44" width="112" height="12" rx="4" fill="rgba(255,255,255,0.12)"/>
+      <!-- laptop -->
+      <rect x="26" y="70" width="108" height="10" rx="4" fill="#072e3a"/>
+      <rect x="36" y="56" width="88" height="18" rx="4" fill="#051f27"/>
+      <text x="44" y="68" font="600 12px Inter" fill="#bff6ff">index.js</text>
+    </g>
+
+    <!-- Card 2 -->
+    <g transform="translate(200,-10)">
+      <rect x="0" y="0" width="200" height="130" rx="12" fill="#7c3aed" opacity="0.95" filter="url(#softShadow)"/>
+      <rect x="14" y="18" width="172" height="18" rx="6" fill="rgba(255,255,255,0.12)"/>
+      <rect x="14" y="46" width="140" height="12" rx="4" fill="rgba(255,255,255,0.08)"/>
+      <rect x="26" y="74" width="148" height="10" rx="4" fill="#0b1220"/>
+      <text x="36" y="86" font="600 12px Inter" fill="#dfe7ff">app.vue</text>
+    </g>
+
+    <!-- Card 3 -->
+    <g transform="translate(430,10)">
+      <rect x="0" y="0" width="160" height="120" rx="12" fill="#06b6d4" filter="url(#softShadow)"/>
+      <rect x="12" y="14" width="136" height="20" rx="6" fill="rgba(255,255,255,0.12)"/>
+      <rect x="12" y="46" width="112" height="12" rx="4" fill="rgba(255,255,255,0.12)"/>
+      <rect x="26" y="74" width="108" height="10" rx="4" fill="#021016"/>
+      <text x="44" y="86" font="600 12px Inter" fill="#eaffff">main.py</text>
+    </g>
+  </g>
+
+  <!-- People silhouettes coding (foreground) -->
+  <g transform="translate(220,360)">
+    <!-- person 1 -->
+    <g transform="translate(0,0)">
+      <circle cx="24" cy="-24" r="22" fill="#ffd4a3"/>
+      <rect x="6" y="-4" width="36" height="52" rx="8" fill="#07385a"/>
+      <rect x="10" y="16" width="28" height="10" rx="6" fill="#0b5c7a"/>
+      <rect x="0" y="28" width="60" height="10" rx="6" fill="rgba(255,255,255,0.03)"/>
+      <rect x="12" y="6" width="36" height="10" rx="4" fill="#0b8ea6"/>
+    </g>
+
+    <!-- person 2 -->
+    <g transform="translate(140,0)">
+      <circle cx="24" cy="-24" r="22" fill="#ffd4a3"/>
+      <rect x="6" y="-4" width="36" height="52" rx="8" fill="#4c1d95"/>
+      <rect x="10" y="16" width="28" height="10" rx="6" fill="#6d28d9"/>
+      <rect x="0" y="28" width="60" height="10" rx="6" fill="rgba(255,255,255,0.03)"/>
+      <rect x="12" y="6" width="36" height="10" rx="4" fill="#8b5cf6"/>
+    </g>
+
+    <!-- person 3 -->
+    <g transform="translate(300,0)">
+      <circle cx="24" cy="-24" r="22" fill="#ffd4a3"/>
+      <rect x="6" y="-4" width="36" height="52" rx="8" fill="#065f46"/>
+      <rect x="10" y="16" width="28" height="10" rx="6" fill="#10b981"/>
+      <rect x="0" y="28" width="60" height="10" rx="6" fill="rgba(255,255,255,0.03)"/>
+      <rect x="12" y="6" width="36" height="10" rx="4" fill="#34d399"/>
+    </g>
+  </g>
+
+  <!-- Confetti (random colorful shapes) -->
+  <g>
+    <rect x="200" y="120" width="6" height="12" rx="2" fill="#ff6b6b" transform="rotate(-15 203 126)"/>
+    <rect x="260" y="100" width="6" height="12" rx="2" fill="#ffd43b" transform="rotate(25 263 106)"/>
+    <rect x="340" y="130" width="6" height="12" rx="2" fill="#60a5fa" transform="rotate(45 343 136)"/>
+    <circle cx="500" cy="140" r="5" fill="#7c3aed"/>
+    <rect x="720" y="90" width="6" height="12" rx="2" fill="#06b6d4" transform="rotate(-25 723 96)"/>
+    <circle cx="840" cy="110" r="6" fill="#34d399"/>
+    <rect x="980" y="150" width="6" height="12" rx="2" fill="#ff8a65" transform="rotate(30 983 156)"/>
+  </g>
+
+  <!-- Bottom label / CTA -->
+  <g transform="translate(100,520)">
+    <rect x="0" y="-18" width="320" height="36" rx="10" fill="url(#spot)"/>
+    <text x="12" y="6" class="small">Organized hackathons • Mentors • Prizes • Real-world problem solving</text>
+  </g>
+</svg>

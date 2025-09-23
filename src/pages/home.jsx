@@ -6,12 +6,14 @@ import ServicesSection from '../components/Home/ServicesSection';
 import Footer from '../components/Footer/Footer';
 import ProductBadge from '../components/Home/ProductBadge';
 import AnimatedVideoBackground from '../components/Background/AnimatedVideoBackground';
-import FPCorousal from '../components/Home/FPCorousal';  
+import FPCorousal from '../components/Home/FPCorousal';
 import { TestimonialCarousel } from '../components/Home/Testimonials';
 import MetricsSection from '../components/Home/Metrics';
 import AboutForm from '../components/About/AboutForm';
+import { useNavigate } from 'react-router-dom';
 
 const HeroContent = () => {
+  const navigate = useNavigate();
   return (
     <div
       className="relative z-10 flex flex-col items-center w-full max-w-5xl mx-auto
@@ -44,7 +46,7 @@ const HeroContent = () => {
 
       {/* Buttons */}
       <div className="flex flex-row gap-2 sm:gap-3 md:gap-5 lg:gap-6 w-full max-w-xs sm:max-w-md justify-center">
-        <button
+        <button onClick={() => navigate("/about#contact")}
           className="
       px-3 sm:px-4 md:px-6 
       py-1.5 sm:py-2 md:py-3 
@@ -57,7 +59,7 @@ const HeroContent = () => {
           Schedule a call Today
         </button>
 
-        <button
+        <button onClick={() => navigate("/projects")}
           className="
       px-3 sm:px-4 md:px-6 
       py-1.5 sm:py-2 md:py-3 
@@ -103,26 +105,35 @@ const TrustedBySection = () => {
         </div>
 
         {/* Logos Row */}
-        <div className="flex flex-wrap justify-center items-center gap-2 sm:gap-4 md:gap-6 lg:gap-16 xl:gap-20">
+        <div className="flex flex-wrap justify-center items-center gap-5 md:gap-8 lg:gap-16 xl:gap-20">
           <div className="flex items-center justify-center text-gray-200 text-[8px] sm:text-[10px] md:text-xs lg:text-lg font-bold hover:text-white transition-colors duration-300">
-            ◆ logoipsum
+            <span><img src="/companyImages/l&t.png" alt="" className='w-full h-3 md:h-6 lg:h-8'/></span>
           </div>
 
           <div className="flex items-center justify-center text-gray-200 text-[8px] sm:text-[10px] md:text-xs lg:text-lg font-bold hover:text-white transition-colors duration-300">
-            ★ logoipsum
+            <span><img src="/companyImages/mphasis.png" alt="" className='w-full h-3 md:h-6 lg:h-8'/></span>
           </div>
 
           <div className="flex items-center justify-center text-gray-200 text-[8px] sm:text-[10px] md:text-xs lg:text-lg font-bold hover:text-white transition-colors duration-300">
-            ▲ logoipsum
+            <span><img src="/companyImages/oracle.png" alt="" className='w-full h-3 md:h-6 lg:h-8'/></span>
           </div>
 
           <div className="flex items-center justify-center text-gray-200 text-[8px] sm:text-[10px] md:text-xs lg:text-lg font-bold hover:text-white transition-colors duration-300">
-            ● logoipsum
+            <span><img src="/companyImages/tcs.png" alt="" className='w-full h-3 md:h-6 lg:h-8'/></span>
           </div>
 
           <div className="flex items-center justify-center text-gray-200 text-[8px] sm:text-[10px] md:text-xs lg:text-lg font-bold hover:text-white transition-colors duration-300">
-            ◉ logoipsum
+            <span><img src="/companyImages/Infosys.png" alt="" className='w-full h-3 md:h-6 lg:h-8'/></span>
           </div>
+
+          <div className="flex items-center justify-center text-gray-200 text-[8px] sm:text-[10px] md:text-xs lg:text-lg font-bold hover:text-white transition-colors duration-300">
+            <span><img src="/companyImages/wipro.png" alt="" className='w-full h-3 md:h-6 lg:h-8'/></span>
+          </div>
+
+          <div className="flex items-center justify-center text-gray-200 text-[8px] sm:text-[10px] md:text-xs lg:text-lg font-bold hover:text-white transition-colors duration-300">
+            <span><img src="/companyImages/techmahindra.png" alt="" className='w-full h-3 md:h-6 lg:h-8'/></span>
+          </div>
+
         </div>
       </div>
     </section>
@@ -160,17 +171,17 @@ const Home = () => {
         <div className="flex-shrink-0">
           <ServicesSection />
         </div>
-         <div className="flex-shrink-0">
-          <FPCorousal/>
+        <div className="flex-shrink-0">
+          <FPCorousal />
         </div>
         <div>
-          <MetricsSection/>
+          <MetricsSection />
         </div>
         <div className='flex-shrink-0'>
-          <TestimonialCarousel/>
+          <TestimonialCarousel />
         </div>
         <div className='flex-shrink-0'>
-          <AboutForm/>
+          <AboutForm />
         </div>
         {/* Footer Section */}
         <div className="flex-shrink-0">

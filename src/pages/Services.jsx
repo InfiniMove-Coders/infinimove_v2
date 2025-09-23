@@ -8,8 +8,10 @@ import ServiceCards3 from '../components/Services/Services3';
 import ServiceCards4 from '../components/Services/Services4';
 import AboutForm from '../components/About/AboutForm';
 import Footer from '../components/Footer/Footer';
+import { useNavigate } from 'react-router-dom';
 
 const Services = () => {
+    const navigate = useNavigate();
     return (
         <div className="bg-black min-h-screen" style={{ overflowX: 'hidden' }}>
             {/* Fixed Navbar at top */}
@@ -19,56 +21,56 @@ const Services = () => {
             {/* Hero Section */}
             <section
                 className="
-    relative bg-black flex items-center justify-center overflow-hidden rounded-[32px]
-    w-full max-w-[1440px] h-[200px] sm:h-[360px] md:h-[460px] lg:h-[530px]
-    mx-auto mt-[60px] sm:mt-[65px] md:mt-[70px] lg:mt-[78px]
-    px-4 sm:px-8 md:px-16 lg:px-[150px]
+                relative bg-black flex items-center justify-center overflow-hidden rounded-[32px]
+                w-full max-w-[1440px] h-[200px] sm:h-[360px] md:h-[460px] lg:h-[530px]
+                mx-auto mt-[60px] sm:mt-[65px] md:mt-[70px] lg:mt-[78px]
+                px-4 sm:px-8 md:px-16 lg:px-[150px]
   "
             >
                 <AnimatedVideoBackground />
 
                 <div
                     className="
-      relative z-10 flex flex-col items-center text-center
-      w-full max-w-[1140px] gap-3 sm:gap-4 md:gap-5 lg:gap-6
-    "
+                relative z-10 flex flex-col items-center text-center
+                w-full max-w-[1140px] gap-3 sm:gap-4 md:gap-5 lg:gap-6
+                "
                 >
                     <ProductBadge />
 
                     {/* Title */}
                     <h1
                         className="
-        font-urbanist text-[#F0F0F0] font-extrabold tracking-tight
-        text-xl sm:text-3xl md:text-4xl lg:text-[54px]
-      "
+                font-urbanist text-[#F0F0F0] font-extrabold tracking-tight
+                text-xl sm:text-3xl md:text-4xl lg:text-[54px]
+                "
                     >
                         Our Services
                     </h1>
 
                     {/* Buttons */}
                     <div className="flex flex-row gap-2 sm:gap-3 md:gap-5 lg:gap-6 justify-center">
-                        <button
+                        <button onClick={() => navigate("/about#contact")}
                             className="
-          px-3 sm:px-4 md:px-6 
-          py-1.5 sm:py-2 md:py-3 
-          bg-[#00064B80] border border-white rounded-full 
-          text-white font-semibold 
-          text-[9px] sm:text-xs md:text-sm lg:text-base
-          hover:bg-blue-600 transition-all duration-300 backdrop-blur-sm
-        "
+                px-3 sm:px-4 md:px-6 
+                py-1.5 sm:py-2 md:py-3 
+                bg-[#00064B80] border border-white rounded-full 
+                text-white font-semibold 
+                text-[9px] sm:text-xs md:text-sm lg:text-base
+                hover:bg-blue-600 transition-all duration-300 backdrop-blur-sm
+                "
                         >
                             Schedule a Call Today
                         </button>
 
-                        <button
+                        <button onClick={() => navigate("/projects")}
                             className="
-          px-3 sm:px-4 md:px-6 
-          py-1.5 sm:py-2 md:py-3 
-          bg-[#00064B80] border border-white rounded-full 
-          text-white font-semibold 
-          text-[9px] sm:text-xs md:text-sm lg:text-base
-          hover:bg-black/30 transition-all duration-300 backdrop-blur-md
-        "
+                    px-3 sm:px-4 md:px-6 
+                    py-1.5 sm:py-2 md:py-3 
+                    bg-[#00064B80] border border-white rounded-full 
+                    text-white font-semibold 
+                    text-[9px] sm:text-xs md:text-sm lg:text-base
+                    hover:bg-black/30 transition-all duration-300 backdrop-blur-md
+                    "
                         >
                             Explore Our Work
                         </button>
@@ -91,7 +93,7 @@ const Services = () => {
                     <ServiceCards4 />
                 </div>
                 <div className='flex-shrink-0'>
-                    <AboutForm />
+                    <AboutForm />  
                 </div>
                 <div className='flex-shrink-0'>
                     <Footer />
