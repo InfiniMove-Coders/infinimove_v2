@@ -21,7 +21,7 @@ const ProductBadge = () => {
         >
           <span
             className="
-              font-urbanist font-light text-[14px] text-gray-300 capitalize
+              font-urbanist font-light text-[13px] text-gray-300 capitalize
               max-md:text-[10px] max-sm:text-[8px]
             "
           >
@@ -29,7 +29,7 @@ const ProductBadge = () => {
           </span>
           <span
             className="
-              font-urbanist font-bold text-[14px] text-white capitalize
+              font-urbanist font-bold text-[13px] text-white capitalize
               max-md:text-[10px] max-sm:text-[8px]
             "
           >
@@ -37,7 +37,7 @@ const ProductBadge = () => {
           </span>
           <span
             className="
-              font-urbanist font-light text-[14px] text-gray-300 capitalize
+              font-urbanist font-light text-[13px] text-gray-300 capitalize
               max-md:text-[10px] max-sm:text-[8px]
             "
           >
