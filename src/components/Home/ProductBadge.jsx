@@ -6,7 +6,7 @@ const ProductBadge = () => {
       <div
         className="
           inline-flex items-center border border-gray-400 rounded-[36px]
-          w-[360px] h-[33px] px-[14px] py-[5px]
+          w-[400px] h-[33px] px-[14px] py-[5px]
           max-md:w-[300px] max-md:h-[26px] max-md:px-3 max-md:py-1
           max-sm:w-[220px] max-sm:h-[22px] max-sm:px-2 max-sm:py-0.5
         "
@@ -21,7 +21,7 @@ const ProductBadge = () => {
         >
           <span
             className="
-              font-urbanist font-light text-[14px] text-gray-300 capitalize
+              font-urbanist font-light text-[13px] text-gray-300 capitalize
               max-md:text-[10px] max-sm:text-[8px]
             "
           >
@@ -29,7 +29,7 @@ const ProductBadge = () => {
           </span>
           <span
             className="
-              font-urbanist font-bold text-[14px] text-white capitalize
+              font-urbanist font-bold text-[13px] text-white capitalize
               max-md:text-[10px] max-sm:text-[8px]
             "
           >
@@ -37,7 +37,7 @@ const ProductBadge = () => {
           </span>
           <span
             className="
-              font-urbanist font-light text-[14px] text-gray-300 capitalize
+              font-urbanist font-light text-[13px] text-gray-300 capitalize
               max-md:text-[10px] max-sm:text-[8px]
             "
           >
