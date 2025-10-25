@@ -1,18 +1,22 @@
 {
   "name": "infinimove_v2",
   "private": true,
+  "homepage": "https://InfiniMove-Coders.github.io/infinimove_v2",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+	 "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.12",
     "clsx": "^2.1.1",
     "emailjs-com": "^3.2.0",
+    "gh-pages": "^6.3.0",
     "motion": "^12.23.12",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
