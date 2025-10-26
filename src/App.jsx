@@ -11,7 +11,7 @@ import ScrollToTop from './components/Navbar/ScrollToTop';
 
 
 const App = () => (
-  <>
+  <Router basename={import.meta.env.BASE_URL}>
   <ScrollToTop />
     <Routes>
       <Route path="/" element={<Home />} />
@@ -21,7 +21,7 @@ const App = () => (
       <Route path="/blogs/:id" element={<IndividualBlog />} />
       <Route path='/services' element={<Services/>} />
     </Routes>
-    </>
+    </Router>
 );
 
 export default App;
