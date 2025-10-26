@@ -3,9 +3,9 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
-export default defineConfig({
+export default defineConfig(({ command }) => ({
   plugins: [react(),
     tailwindcss(),
   ],
-   base: "/infinimove_v2/",
-})
+  base: command === 'build' ? "/infinimove_v2/" : "/",
+}))
