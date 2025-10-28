@@ -15,7 +15,7 @@ const Footer = () => {
         {/* Left section - logo + company info */}
         <div className="flex-1 min-w-[100px] sm:min-w-[220px] md:min-w-[240px]" style={{ fontFamily: 'Urbanist' }}>
           <div className="flex items-center mb-3">
-            <img src="/Vector.svg" alt="InfiniMove Logo" className="w-2 h-2 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:h-10 lg:w-10 mr-2" />
+            <img src="/infinimove_v2/Vector.svg" alt="InfiniMove Logo" className="w-2 h-2 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:h-10 lg:w-10 mr-2" />
             <span className="font-semibold text-[7px] sm:text-base md:text-[15px] lg:text-[28px]">InfiniMove</span>
           </div>
           <div className="mb-4 text-[4px] sm:text-[8px] md:text-[13px] lg:text-base leading-relaxed max-w-xs sm:max-w-[180px] md:max-w-md">

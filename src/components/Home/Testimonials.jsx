@@ -7,28 +7,28 @@ const testimonials = [
     location: "Kadapa , AP",
     rating: 4.5,
     text: "The team did an outstanding job with our college website. It’s intuitive, visually appealing, and has significantly improved our user engagement.",
-    img: "/images/TC1.png",
+    img: "/infinimove_v2/images/TC1.png",
   },
   {
   name: "Unknown",
   location: "Hyderabad,TS",
   rating: 4.6,
   text: "The designs delivered were visually stunning and user-friendly. Navigation feels effortless, and customers appreciate the refreshed look.",
-  img: "/images/TC1.png",
+  img: "/infinimove_v2/images/TC1.png",
 },
   {
     name: "Hasini Enterprises",
     location: "Bangalore,KA",
     rating: 4.7,
     text: "The e-commerce website was delivered with exceptional quality and efficiency. It offers a top-notch user experience, leading to increased customer satisfaction.",
-    img: "/images/TC1.png",
+    img: "/infinimove_v2/images/TC1.png",
   },
   {
   name: "Unknown",
   location: "Hyderabad, TS",
   rating: 4.9,
   text: "The AI-powered chatbot completely changed our customer service. Queries are resolved instantly, and users feel supported at all times.",
-  img: "/images/TC1.png",
+  img: "/infinimove_v2/images/TC1.png",
 }
 ];
 

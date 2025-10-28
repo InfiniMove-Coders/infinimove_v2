@@ -4,27 +4,27 @@ const services = [
   {
     title: "Custom Chatbot Development",
     options: "30 options available",
-    icon: "/images/ServiceIcon.png",
+    icon: "/infinimove_v2/images/ServiceIcon.png",
   },
   {
     title: "Natural Language Processing",
     options: "30 options available",
-    icon: "/images/ServiceIcon.png",
+    icon: "/infinimove_v2/images/ServiceIcon.png",
   },
   {
     title: "Lead Generation Bots",
     options: "30 options available",
-    icon: "/images/ServiceIcon.png",
+    icon: "/infinimove_v2/images/ServiceIcon.png",
   },
   {
     title: "Customer Support Bots",
     options: "30 options available",
-    icon: "/images/ServiceIcon.png",
+    icon: "/infinimove_v2/images/ServiceIcon.png",
   },
   {
     title: "E-Commerce Support",
     options: "30 options available",
-    icon: "/images/ServiceIcon.png",
+    icon: "/infinimove_v2/images/ServiceIcon.png",
   },
 ];
 

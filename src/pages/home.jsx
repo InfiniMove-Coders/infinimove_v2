@@ -107,31 +107,31 @@ const TrustedBySection = () => {
         {/* Logos Row */}
         <div className="flex flex-wrap justify-center items-center gap-5 md:gap-8 lg:gap-16 xl:gap-20">
           <div className="flex items-center justify-center text-gray-200 text-[8px] sm:text-[10px] md:text-xs lg:text-lg font-bold hover:text-white transition-colors duration-300">
-            <span><img src="/companyImages/l&t.png" alt="" className='w-full h-3 md:h-6 lg:h-8'/></span>
+            <span><img src="/infinimove_v2/companyImages/l&t.png" alt="" className='w-full h-3 md:h-6 lg:h-8'/></span>
           </div>
 
           <div className="flex items-center justify-center text-gray-200 text-[8px] sm:text-[10px] md:text-xs lg:text-lg font-bold hover:text-white transition-colors duration-300">
-            <span><img src="/companyImages/mphasis.png" alt="" className='w-full h-3 md:h-6 lg:h-8'/></span>
+            <span><img src="/infinimove_v2/companyImages/mphasis.png" alt="" className='w-full h-3 md:h-6 lg:h-8'/></span>
           </div>
 
           <div className="flex items-center justify-center text-gray-200 text-[8px] sm:text-[10px] md:text-xs lg:text-lg font-bold hover:text-white transition-colors duration-300">
-            <span><img src="/companyImages/oracle.png" alt="" className='w-full h-3 md:h-6 lg:h-8'/></span>
+            <span><img src="/infinimove_v2/companyImages/oracle.png" alt="" className='w-full h-3 md:h-6 lg:h-8'/></span>
           </div>
 
           <div className="flex items-center justify-center text-gray-200 text-[8px] sm:text-[10px] md:text-xs lg:text-lg font-bold hover:text-white transition-colors duration-300">
-            <span><img src="/companyImages/tcs.png" alt="" className='w-full h-3 md:h-6 lg:h-8'/></span>
+            <span><img src="/infinimove_v2/companyImages/tcs.png" alt="" className='w-full h-3 md:h-6 lg:h-8'/></span>
           </div>
 
           <div className="flex items-center justify-center text-gray-200 text-[8px] sm:text-[10px] md:text-xs lg:text-lg font-bold hover:text-white transition-colors duration-300">
-            <span><img src="/companyImages/Infosys.png" alt="" className='w-full h-3 md:h-6 lg:h-8'/></span>
+            <span><img src="/infinimove_v2/companyImages/Infosys.png" alt="" className='w-full h-3 md:h-6 lg:h-8'/></span>
           </div>
 
           <div className="flex items-center justify-center text-gray-200 text-[8px] sm:text-[10px] md:text-xs lg:text-lg font-bold hover:text-white transition-colors duration-300">
-            <span><img src="/companyImages/wipro.png" alt="" className='w-full h-3 md:h-6 lg:h-8'/></span>
+            <span><img src="/infinimove_v2/companyImages/wipro.png" alt="" className='w-full h-3 md:h-6 lg:h-8'/></span>
           </div>
 
           <div className="flex items-center justify-center text-gray-200 text-[8px] sm:text-[10px] md:text-xs lg:text-lg font-bold hover:text-white transition-colors duration-300">
-            <span><img src="/companyImages/techmahindra.png" alt="" className='w-full h-3 md:h-6 lg:h-8'/></span>
+            <span><img src="/infinimove_v2/companyImages/techmahindra.png" alt="" className='w-full h-3 md:h-6 lg:h-8'/></span>
           </div>
 
         </div>

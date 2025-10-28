@@ -14,7 +14,7 @@ const projectCards = [
             name: "DhyanU Team",
             title: "AI Meditation Innovators",
         },
-        image: "/images/DhanU.svg",
+        image: "/infinimove_v2/images/DhanU.svg",
         dark: true,
     },
     {
@@ -29,9 +29,8 @@ const projectCards = [
             text: "“The AI chatbot handles 90% of our customer queries automatically. Our team can now focus on complex issues.”",
             name: "Infinimove Team",
             title: "Customer Success Director",
-            avatar: "/images/Testimony.png"
         },
-        image: "/images/AIChatbot.svg",
+        image: "/infinimove_v2/images/AIChatbot.svg",
         dark: false
     },
     {
@@ -46,9 +45,9 @@ const projectCards = [
             text: "“The team delivered our enterprise e-commerce website with exceptional quality and efficiency. The user experience is top-notch, and we’ve seen a major boost in engagement and sales.”",
             name: "E-Commerce Director",
             title: "Retail Enterprise",
-            avatar: "/images/Testimony.png"
+
         },
-        image: "/images/ecommerceweb.svg", // we’ll generate this SVG
+        image: "/infinimove_v2/images/ecommerceweb.svg", 
         dark: true
     },
 ];

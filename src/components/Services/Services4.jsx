@@ -4,27 +4,27 @@ const services = [
   {
     title: "Enterprise Software(ERP)",
     options: "30 options available",
-    icon: "/images/ServiceIcon.png",
+    icon: "/infinimove_v2/images/ServiceIcon.png",
   },
   {
     title: "SaaS\nDevelopment",
     options: "30 options available",
-    icon: "/images/ServiceIcon.png",
+    icon: "/infinimove_v2/images/ServiceIcon.png",
   },
   {
     title: "Desktop App Development",
     options: "30 options available",
-    icon: "/images/ServiceIcon.png",
+    icon: "/infinimove_v2/images/ServiceIcon.png",
   },
   {
     title: "Custom Software Development",
     options: "30 options available",
-    icon: "/images/ServiceIcon.png",
+    icon: "/infinimove_v2/images/ServiceIcon.png",
   },
   {
     title: "Legacy System Modernization",
     options: "30 options available",
-    icon: "/images/ServiceIcon.png",
+    icon: "/infinimove_v2/images/ServiceIcon.png",
   },
 ];
 

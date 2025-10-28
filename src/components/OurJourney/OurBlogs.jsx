@@ -12,9 +12,9 @@ const OurBlogs = () => {
       description:
         'Designed and delivered scalable, high-performance web applications tailored to client needs, ensuring exceptional quality, user experience, and business impact.',
       author: 'Tech Team',
-      avatar: '/images/Testimony.png',
-      image: '/images/Web.png',
-      heroImage: '/images/Web.png',
+      avatar: '/infinimove_v2/images/Testimony.png',
+      image: '/infinimove_v2/images/Web.png',
+      heroImage: '/infinimove_v2/images/Web.png',
       toc: ['Intro', 'Process', 'Results', 'Conclusion'],
       content: [
         'We analyze client requirements in detail before starting the development process, ensuring all objectives are captured and documented.',
@@ -34,9 +34,9 @@ const OurBlogs = () => {
       description:
         'Organized large-scale hackathons that bring together innovators, developers, and entrepreneurs to solve real-world challenges with creativity and technology.',
       author: 'Innovation Team',
-      avatar: '/images/Testimony.png',
-      image: '/images/Hackathon.svg',
-      heroImage: '/images/Hackathon.svg',
+      avatar: '/infinimove_v2/images/Testimony.png',
+      image: '/infinimove_v2/images/Hackathon.svg',
+      heroImage: '/infinimove_v2/images/Hackathon.svg',
       toc: ['Overview', 'Highlights', 'Impact'],
       content: [
         'We organize hackathons to foster innovation and collaboration among participants from diverse backgrounds.',
@@ -56,9 +56,9 @@ const OurBlogs = () => {
       description:
         'Proudly registered in India, our startup operates with compliance and credibility, enabling us to innovate, collaborate, and scale with trust and recognition.',
       author: 'Founding Team',
-      avatar: '/images/Testimony.png',
-      image: '/images/StartUp.svg',
-      heroImage: '/images/StartUp.svg',
+      avatar: '/infinimove_v2/images/Testimony.png',
+      image: '/infinimove_v2/images/StartUp.svg',
+      heroImage: '/infinimove_v2/images/StartUp.svg',
       toc: ['Introduction', 'Why Registration Matters', 'Impact on Growth', 'Future Vision'],
       content: [
         'We are proud to announce that our startup is officially registered in India, marking an important milestone in our journey.',
@@ -78,9 +78,9 @@ const OurBlogs = () => {
       description:
         'We are in the process of signing Memorandums of Understanding with industries, fostering strong partnerships that will drive innovation and impactful opportunities.',
       author: 'Partnerships Team',
-      avatar: '/images/Testimony.png',
-      image: '/images/mou.svg',
-      heroImage: '/images/mou.svg',
+      avatar: '/infinimove_v2/images/Testimony.png',
+      image: '/infinimove_v2/images/mou.svg',
+      heroImage: '/infinimove_v2/images/mou.svg',
       toc: ['Overview', 'Why MoUs Matter', 'Benefits of Collaboration', 'What’s Next'],
       content: [
         'We are preparing to sign strategic Memorandums of Understanding (MoUs) with leading industries to foster collaboration.',

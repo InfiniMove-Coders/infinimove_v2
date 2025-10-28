@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 
 const AnimatedVideoBackground = ({
-  videoSrc = "/clarity-stream.mp4",
+  videoSrc = "/infinimove_v2/clarity-stream.mp4",
   overlayOpacity = 0.2,
   showGradient = true
 }) => {

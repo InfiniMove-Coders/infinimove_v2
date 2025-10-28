@@ -40,7 +40,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center gap-1 sm:gap-1.5 md:gap-2" onClick={()=>navigate("/")}>
             <img
-              src="/Vector.svg"
+              src="/infinimove_v2/Vector.svg"
               alt="Logo"
               className="w-2 h-2 sm:w-3 sm:h-2.5 md:w-4 md:h-3 lg:w-8 lg:h-6"
             />
