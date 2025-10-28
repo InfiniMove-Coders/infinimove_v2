@@ -15,7 +15,7 @@ const projectCards = [
       name: "DhyanU Team",
       title: "AI Meditation Innovators",
     },
-    image: "/images/DhanU.svg",
+    image: "/infinimove_v2/images/DhanU.svg",
     dark: true,
   },
   {
@@ -31,7 +31,7 @@ const projectCards = [
       name: "Infinimove Team",
       title: "Customer Success Director",
     },
-    image: "/images/AIChatbot.svg",
+    image: "/infinimove_v2/images/AIChatbot.svg",
     dark: false
   },
   {
@@ -47,7 +47,7 @@ const projectCards = [
       name: "E-Commerce Director",
       title: "Retail Enterprise",
     },
-    image: "/images/ecommerceweb.svg", // we’ll generate this SVG
+    image: "/infinimove_v2/images/ecommerceweb.svg",  
     dark: true
   },
 ];

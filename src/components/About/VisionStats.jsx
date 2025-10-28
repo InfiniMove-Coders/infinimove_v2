@@ -61,7 +61,7 @@ const VisionStats = () => (
               w-[18px] h-[12px] sm:w-[22px] sm:h-[14px] md:w-[35px] md:h-[20px]
               lg:w-[63px] lg:h-[34px]
             "
-            src="/Vector.svg"
+            src="/infinimove_v2/Vector.svg"
             alt=""
           />
 

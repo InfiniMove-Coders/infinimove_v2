@@ -114,7 +114,7 @@ const AboutForm = () => {
               >
                 <span>We are just a message away</span>
                 <img
-                  src="/images/rocket.svg"
+                  src="/infinimove_v2/images/rocket.svg"
                   alt=""
                   className="h-2 sm:h-3 md:h-4 w-3 sm:w-6 md:w-8 mt-0.5"
                   style={{ mixBlendMode: "lighten" }}
@@ -148,10 +148,10 @@ const AboutForm = () => {
           {/* Info Cards */}
           <div className="grid grid-cols-2 gap-1 sm:gap-2 md:gap-2 text-black h-full p-1">
             {[
-              { title: "Visit Us", text: "Hyderabad\nTelangana", icon: "/images/location_icon.png" },
-              { title: "Call Us", text: "+91 83411 87337\n+91 73961 44250", icon: "/images/contact_icon.png" },
-              { title: "Email Us", text: "contact@infinimove.in", icon: "/images/email_icon.png" },
-              { title: "Business Hours", text: "Mon-Fri: 9AM - 6PM\nSat: 10AM - 4PM", icon: "/images/BusinessHours.png" },
+              { title: "Visit Us", text: "Hyderabad\nTelangana", icon: "/infinimove_v2/images/location_icon.png" },
+              { title: "Call Us", text: "+91 83411 87337\n+91 73961 44250", icon: "/infinimove_v2/images/contact_icon.png" },
+              { title: "Email Us", text: "contact@infinimove.in", icon: "/infinimove_v2/images/email_icon.png" },
+              { title: "Business Hours", text: "Mon-Fri: 9AM - 6PM\nSat: 10AM - 4PM", icon: "/infinimove_v2/images/BusinessHours.png" },
             ].map((info) => (
               <div
                 key={info.title}

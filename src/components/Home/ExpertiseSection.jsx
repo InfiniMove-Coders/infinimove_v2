@@ -10,7 +10,7 @@ const ExpertiseSection = () => {
       title: "Web Development",
       description: "Building responsive, high-performance websites that captivate your audience.",
       icons: {
-        left: ["icons/web-left1.svg", "icons/web-left2.svg", "icons/web-left3.svg"],
+        left: ["/infinimove_v2/icons/web-left1.svg", "icons/web-left2.svg", "icons/web-left3.svg"],
         right: ["icons/web-right1.svg", "icons/web-right2.svg", "icons/web-right3.svg"],
       },
     },
@@ -112,7 +112,7 @@ const ExpertiseSection = () => {
                         key={`l-${idx}-${i}`}
                         src={icon}
                         alt=""
-                        className=" h-5 w-5 lg:w-10 lg:h-10 sm:h-5 sm:h-5 md:h-6 md:w-6 absolute"
+                        className=" h-5 w-5 lg:w-10 lg:h-10 sm:h-5 md:h-6 md:w-6 absolute"
                         style={{
                           left: '30%',
                           top: '50%',
@@ -152,7 +152,7 @@ const ExpertiseSection = () => {
                         key={`r-${idx}-${i}`}
                         src={icon}
                         alt=""
-                        className="h-5 w-5 lg:w-10 lg:h-10 sm:h-5 sm:h-5 md:h-6 md:w-6 absolute"
+                        className="h-5 w-5 lg:w-10 lg:h-10 sm:h-5 md:h-6 md:w-6 absolute"
                         style={{
                           left: '70%',
                           top: '50%',

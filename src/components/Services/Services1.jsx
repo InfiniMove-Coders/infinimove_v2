@@ -4,27 +4,27 @@ const services = [
   {
     title: "Custom Website Development",
     options: "30 options available",
-    icon: "/images/ServiceIcon.png",
+    icon: "/infinimove_v2/images/ServiceIcon.png",
   },
   {
     title: "E-Commerce Development",
     options: "30 options available",
-    icon: "/images/ServiceIcon.png",
+    icon: "/infinimove_v2/images/ServiceIcon.png",
   },
   {
     title: "CMS\nDevelopment", // Forced line break
     options: "30 options available",
-    icon: "/images/ServiceIcon.png",
+    icon: "/infinimove_v2/images/ServiceIcon.png",
   },
   {
     title: "Progressive Web Apps",
     options: "30 options available",
-    icon: "/images/ServiceIcon.png",
+    icon: "/infinimove_v2/images/ServiceIcon.png",
   },
   {
     title: "API\nDevelopment", // Forced line break
     options: "30 options available",
-    icon: "/images/ServiceIcon.png",
+    icon: "/infinimove_v2/images/ServiceIcon.png",
   },
 ];
 

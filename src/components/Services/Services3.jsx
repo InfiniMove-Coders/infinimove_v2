@@ -4,27 +4,27 @@ const services = [
   {
     title: "UX\nResearch",
     options: "30 options available",
-    icon: "/images/ServiceIcon.png",
+    icon: "/infinimove_v2/images/ServiceIcon.png",
   },
   {
     title: "User Interface Design",
     options: "30 options available",
-    icon: "/images/ServiceIcon.png",
+    icon: "/infinimove_v2/images/ServiceIcon.png",
   },
   {
     title: "Wireframing & Prototyping",
     options: "30 options available",
-    icon: "/images/ServiceIcon.png",
+    icon: "/infinimove_v2/images/ServiceIcon.png",
   },
   {
     title: "Design System Creation",
     options: "30 options available",
-    icon: "/images/ServiceIcon.png",
+    icon: "/infinimove_v2/images/ServiceIcon.png",
   },
   {
     title: "Usability\nTesting",
     options: "30 options available",
-    icon: "/images/ServiceIcon.png",
+    icon: "/infinimove_v2/images/ServiceIcon.png",
   },
 ];
 

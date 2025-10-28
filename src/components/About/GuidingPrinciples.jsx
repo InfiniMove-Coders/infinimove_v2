@@ -26,7 +26,7 @@ const GuidingPrinciples = () => (
 
     {/* Guiding Principles Image */}
     <img
-      src="/images/GuidingPrinciple.png"
+      src="/infinimove_v2/images/GuidingPrinciple.png"
       alt="Guiding Principles"
       className="
         mt-4

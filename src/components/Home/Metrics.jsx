@@ -55,14 +55,14 @@ const MetricsSection = () => {
         <div className="relative col-span-1">
           <div className="w-full h-[140px] sm:h-[300px] md:h-[300px] lg:w-[400px] lg:h-[325px] bg-black/10 rounded-[24px] lg:rounded-[40px] shadow-lg overflow-hidden">
             <img
-              src="/images/metrics1.png"
+              src="/infinimove_v2/images/metrics1.png"
               alt="Feature"
               className="w-full h-full object-cover"
             />
           </div>
           <div className="mt-4 sm:absolute sm:top-[320px] md:absolute md:top-[330px] lg:absolute lg:top-[350px] w-full sm:w-[300px] md:w-[250px] lg:w-[400px] h-[60px] sm:h-[140px] md:h-[150px] lg:h-[150px] bg-[#0072FF]/20 rounded-[24px] lg:rounded-[40px] flex items-center sm:px-6">
             <img
-              src="/images/metrics2.png"
+              src="/infinimove_v2/images/metrics2.png"
               alt="Feature Icon"
               className="w-[30px] sm:w-[90px] md:w-[90px] lg:w-[120px] h-auto object-contain -rotate-6"
             />
@@ -76,7 +76,7 @@ const MetricsSection = () => {
         <div className="relative">
           <div className="w-[140px] lg:ml-15 sm:w-[300px] md:w-[340px] lg:w-[400px] h-[60px] sm:h-[140px] md:h-[150px] lg:h-[150px] bg-[#0072FF]/20 rounded-[24px] lg:rounded-[40px] flex items-center px-4 sm:px-6">
             <img
-              src="/images/metrics4.png"
+              src="/infinimove_v2/images/metrics4.png"
               alt="Feature"
               className="w-[30px] sm:w-[80px] md:w-[90px] lg:w-[100px] h-auto object-contain"
             />
@@ -86,7 +86,7 @@ const MetricsSection = () => {
           </div>
           <div className="mt-4 lg:ml-15 sm:absolute sm:top-[170px] md:absolute md:top-[175px] lg:absolute lg:top-[175px] w-full sm:w-[200px] md:w-[250px] lg:w-[250px] h-[140px] sm:h-[260px] md:h-[300px] lg:h-[325px] rounded-[24px] lg:rounded-[40px] shadow-lg overflow-hidden">
             <img
-              src="/images/metrics3.png"
+              src="/infinimove_v2/images/metrics3.png"
               alt="Middle Large"
               className="w-full h-full object-cover"
             />
@@ -97,14 +97,14 @@ const MetricsSection = () => {
         <div className="relative">
           <div className=" ml-6 lg:left-30 sm:absolute sm:top-0 sm:right-0 md:absolute md:top-0 md:right-0 lg:absolute lg:top-0 lg:right-0 w-[80px] sm:w-[200px] md:w-[150px] lg:w-[250px] h-[60px] sm:h-[140px] md:h-[150px] lg:h-[150px] bg-[#0072FF]/20 rounded-[24px] lg:rounded-[40px] flex items-center justify-center">
             <img
-              src="/images/metrics5.png"
+              src="/infinimove_v2/images/metrics5.png"
               alt="Logo"
               className="w-[60px] sm:w-[180px] md:w-[200px] lg:w-[225px] h-auto object-contain"
             />
           </div>
           <div className=" mt-4 sm:absolute sm:top-[170px] md:absolute md:top-[175px] lg:absolute lg:top-[175px] w-full sm:w-[300px] md:w-[250px] lg:w-[400px] h-[60px] sm:h-[140px] md:h-[150px] lg:h-[150px] bg-[#0072FF]/20 rounded-[24px] lg:rounded-[40px] flex items-center px-2  sm:px-6">
             <img
-              src="/images/metrics7.png"
+              src="/infinimove_v2/images/metrics7.png"
               alt="Expertise"
               className="w-[30px] sm:w-[90px] md:w-[80px] lg:w-[117px] h-auto object-contain"
             />
@@ -114,7 +114,7 @@ const MetricsSection = () => {
           </div>
           <div className="mt-4 sm:absolute sm:top-[330px] md:absolute md:top-[350px] lg:absolute lg:top-[350px] w-full sm:w-[300px] md:w-[250px] lg:w-[400px] h-[60px] sm:h-[140px] md:h-[150px] lg:h-[150px] bg-[#0072FF]/20 rounded-[24px] lg:rounded-[40px] flex items-center px-2 sm:px-6">
             <img
-              src="/images/metrics6.png"
+              src="/infinimove_v2/images/metrics6.png"
               alt="Support"
               className="w-[30px] sm:w-[90px] md:w-[90px] lg:w-[108px] h-auto object-contain"
             />
